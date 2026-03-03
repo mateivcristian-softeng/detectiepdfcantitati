@@ -69,3 +69,28 @@ Sau dublu-click pe `run.bat`
 - OCR-ul face upscaling 2x automat pentru text mic
 - Formulele de calcul:
   - `Termosistem = Suprafata Fatada - Ferestre - Usi`
+
+## Workflow sincronizat (5 AI)
+
+Procesul de colaborare multi-agent este implementat in proiect.
+
+Documentatie:
+- `docs/WORKFLOW_SYNC.md`
+
+Scripturi:
+- `scripts/setup-worktrees.ps1` - creeaza worktree-uri si branch-uri pentru cei 5 AI
+- `scripts/worktree-status.ps1` - status centralizat (dirty/ahead/behind/last commit)
+- `scripts/sync-worktrees.ps1` - pull/rebase sincronizat pe toate worktree-urile
+- `scripts/check-ownership.ps1` - verifica daca branch-ul modifica doar zonele permise
+- `scripts/integration-merge.ps1` - merge train pe `integration` + quality command
+- `.github/workflows/sync-gate.yml` - quality gate automat pe `integration` si `main`
+
+Comenzi rapide:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/setup-worktrees.ps1
+powershell -ExecutionPolicy Bypass -File scripts/worktree-status.ps1
+powershell -ExecutionPolicy Bypass -File scripts/sync-worktrees.ps1
+powershell -ExecutionPolicy Bypass -File scripts/check-ownership.ps1
+powershell -ExecutionPolicy Bypass -File scripts/integration-merge.ps1
+```

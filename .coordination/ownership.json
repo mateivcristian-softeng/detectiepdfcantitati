@@ -1,0 +1,39 @@
+{
+  "defaultShared": [
+    "README.md",
+    "docs/",
+    "scripts/",
+    ".github/",
+    ".cursor/",
+    ".coordination/"
+  ],
+  "owners": {
+    "feat/ai1-ingest-scale": [
+      "core/pdf_converter.py",
+      "core/ocr_engine.py",
+      "core/pipeline.py",
+      "config.py"
+    ],
+    "feat/ai2-detectie-cv": [
+      "core/color_detector.py",
+      "core/pipeline.py",
+      "config.py"
+    ],
+    "feat/ai3-calcule-excel": [
+      "core/area_calculator.py",
+      "core/excel_exporter.py",
+      "core/pipeline.py"
+    ],
+    "feat/ai4-gui-annotare": [
+      "gui/",
+      "main.py",
+      "run.bat"
+    ],
+    "feat/ai5-testare-ci": [
+      "test_pipeline.py",
+      "requirements.txt",
+      "README.md",
+      ".github/"
+    ]
+  }
+}

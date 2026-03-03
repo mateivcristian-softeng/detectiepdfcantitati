@@ -1,0 +1,20 @@
+---
+description: Enforce synchronized multi-agent delivery process
+alwaysApply: true
+---
+
+# DrawQuantPDF Multi-Agent Sync
+
+- Respect branch model: `main` (stable), `integration` (merge train), `feat/aiX-*` (feature work).
+- Keep edits aligned to your ownership zone unless task explicitly requires cross-zone changes.
+- Before coding, sync with `origin/integration` using `scripts/sync-worktrees.ps1` when map exists.
+- Prefer small, atomic commits with clear intent and rollback-friendly scope.
+- For integration, use `scripts/integration-merge.ps1` to merge feature branches and run quality checks.
+- Do not mix refactor + feature + docs in one PR unless unavoidable.
+
+## Required PR checks
+
+- PR includes risk note, test plan, and impacted component list.
+- Branch is rebased on latest `origin/integration`.
+- Local verification is documented (`compileall`, tests, manual GUI where needed).
+- Export/calc behavior is validated with at least one real sample.

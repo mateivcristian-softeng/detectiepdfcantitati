@@ -13,3 +13,5 @@ env/
 
 .DS_Store
 Thumbs.db
+
+.coordination/worktree-map.json

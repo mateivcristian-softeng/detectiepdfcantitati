@@ -1,0 +1,29 @@
+name: Sync Gate
+
+on:
+  pull_request:
+    branches:
+      - integration
+      - main
+  push:
+    branches:
+      - integration
+      - main
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile all python sources
+        run: python -m compileall .
