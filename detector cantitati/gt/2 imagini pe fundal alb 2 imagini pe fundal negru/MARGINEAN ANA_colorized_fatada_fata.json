@@ -1,0 +1,32 @@
+{
+  "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_marginean_ana_colorized_fatada_fata",
+  "image_size": {
+    "width": 2297,
+    "height": 1103
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        89,
+        296,
+        1228,
+        263
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        89,
+        560,
+        1227,
+        42
+      ],
+      "type": "socle"
+    }
+  ]
+}

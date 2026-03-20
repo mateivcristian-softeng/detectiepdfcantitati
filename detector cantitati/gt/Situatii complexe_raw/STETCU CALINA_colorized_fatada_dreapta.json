@@ -1,0 +1,88 @@
+{
+  "sample_id": "situatii_complexe_raw_stetcu_calina_colorized_fatada_dreapta",
+  "image_size": {
+    "width": 1212,
+    "height": 1139
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        68,
+        35,
+        491,
+        513
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        198,
+        345,
+        78,
+        112
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        143,
+        415,
+        21,
+        19
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        370,
+        441,
+        83,
+        28
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        476,
+        487,
+        13,
+        18
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [
+    {
+      "bbox": [
+        204,
+        158,
+        100,
+        139
+      ],
+      "type": "door"
+    },
+    {
+      "bbox": [
+        404,
+        311,
+        50,
+        75
+      ],
+      "type": "door"
+    }
+  ],
+  "socles": [
+    {
+      "bbox": [
+        92,
+        543,
+        458,
+        36
+      ],
+      "type": "socle"
+    }
+  ]
+}

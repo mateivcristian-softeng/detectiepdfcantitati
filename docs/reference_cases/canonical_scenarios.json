@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-03-11",
+  "description": "Canonical scenario registry for deterministic facade detector regression.",
+  "scenarios": [
+    {
+      "id": "ROMCEA",
+      "owner": "facade-geometry",
+      "scene_class": "flat_long_facade",
+      "raw_path": "detector cantitati/raw/romcea_raw/ROMCEA MARIA_colorized_fatada_spate.png",
+      "world_file_path": "detector cantitati/raw/romcea_raw/ROMCEA MARIA_colorized_fatada_spate.pgw",
+      "reference_spec_path": "docs/reference_cases/romcea_spate_reference.md",
+      "reference_json_path": "docs/reference_cases/romcea_spate_expected.json",
+      "reference_screenshot_path": "assets/reference/romcea_spate_expected_reference_chat_2026-03-11.png",
+      "expected": {
+        "scene_type": "flat_long_facade",
+        "facades": 1,
+        "windows": 4,
+        "doors": 1,
+        "socles": 1
+      },
+      "focus": [
+        "upper-right facade contour should follow the eave, not right-edge noise",
+        "facade lower cutoff should stop exactly at socle top",
+        "socle should reach the left bottom edge and follow terrain variation",
+        "central cluster must remain window + door + window"
+      ]
+    },
+    {
+      "id": "ARION",
+      "owner": "opening-detector",
+      "scene_class": "composite_stepped_facade",
+      "raw_path": "detector cantitati/raw/usa + fereastra alaturate_raw/ARION SIMION_colorized_fatada_fata.png",
+      "world_file_path": "detector cantitati/raw/usa + fereastra alaturate_raw/ARION SIMION_colorized_fatada_fata.pgw",
+      "processed_reference_path": "detector cantitati/procesate/ușă + ferestre alăturate/ARION SIMION_colorized_fatada_fata_procesat.png",
+      "expected": {
+        "scene_type": "composite_stepped_facade",
+        "facades": 1,
+        "min_windows": 4,
+        "min_doors": 2,
+        "socles": 1
+      },
+      "focus": [
+        "recover the double brown door cluster",
+        "recover the central door with adjacent sidelights/windows",
+        "keep the merged stepped facade body instead of collapsing to the lower band"
+      ],
+      "reference_json_path": "docs/reference_cases/arion_expected.json",
+      "reference_screenshot_path": "assets/reference/arion_expected_reference_chat_2026-03-11.png"
+    },
+    {
+      "id": "MARGINEAN_DREAPTA",
+      "owner": "facade-geometry",
+      "scene_class": "gable_facade",
+      "raw_path": "detector cantitati/raw/2 imagini pe fundal alb 2 imagini pe fundal negru/MARGINEAN ANA_colorized_fatada_dreapta.png",
+      "processed_reference_path": "detector cantitati/procesate/2 imagini pe fundal alb 2 imagini pe fundal negru/MARGINEAN ANA_colorized_fatada_dreapta_procesat.png",
+      "expected": {
+        "scene_type": "gable_facade",
+        "facades": 1,
+        "windows": 0,
+        "doors": 0,
+        "socles": 1
+      },
+      "focus": [
+        "complete the full gable body through the bright/white gap",
+        "do not stop the facade at the white transition",
+        "keep zero false openings in the lower-right dark region"
+      ],
+      "reference_json_path": "docs/reference_cases/marginean_dreapta_expected.json"
+    },
+    {
+      "id": "MUNTEAN_STANGA",
+      "owner": "scene-router",
+      "scene_class": "sparse_openings_flat",
+      "raw_path": "detector cantitati/raw/2 imagini pe fundal alb 2 imagini pe fundal negru/MUNTEAN LUCRETIA_colorized_fatada_stanga.png",
+      "processed_reference_path": "detector cantitati/procesate/2 imagini pe fundal alb 2 imagini pe fundal negru/MUNTEAN LUCRETIA_colorized_fatada_stanga_procesat.png",
+      "expected": {
+        "scene_type": "sparse_openings_flat",
+        "facades": 1,
+        "windows": 1,
+        "doors": 0,
+        "socles": 1
+      },
+      "focus": [
+        "keep the one real window only",
+        "suppress fake door + sidelight pair on the right",
+        "include the right-side attachment in the final silhouette"
+      ],
+      "reference_json_path": "docs/reference_cases/muntean_stanga_expected.json"
+    }
+  ]
+}

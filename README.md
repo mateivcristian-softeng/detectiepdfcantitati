@@ -6,12 +6,22 @@ Aplicatie profesionala pentru detectia si cuantificarea suprafetelor de fatade, 
 
 - **Detectie automata** a fatadelor, ferestrelor si usilor din imagini annotate
 - **OCR inteligent** cu upscaling automat si corectie automata a punctelor zecimale
+- **Calibrare automata px/m²** din elemente cunoscute pentru completarea ariilor lipsa
+- **Calibrare liniara px/m** din cote OCR pentru stabilizarea estimarilor
+- **Filtrare robusta anti-fals-pozitive** pentru usi (text FATADA exclus)
+- **Detecție markup**: contur rosu pentru fatada + contur galben pentru ferestre
+- **Excludere automata soclu** (pentru fatade auto-detectate din foto/segmentare)
+- **Motor cantitati liniare**: glaf, picurator (sus ferestre+usi), coltare verticale
+- **Quality gate automat** care semnaleaza input insuficient pentru analiza full-auto
 - **Conversie PNG → PDF** pastrand scara 1:100
 - **Export Excel** cu raport formatat profesional (suprafete, subtotaluri, totaluri)
 - **Calcul automat**:
   - Suprafata totala fatade
   - Suprafata tamplarie (ferestre + usi)
   - Suprafata termosistem = Fatade - Tamplarie
+  - Lungime glaf = suma latimilor ferestrelor
+  - Lungime picurator = suma latimilor ferestrelor + usilor
+  - Lungime coltare = aproximare 2 x inaltime fatada
 - **GUI moderna** cu CustomTkinter (dark/light mode)
 - **Editare manuala** pentru corectii si completari
 
@@ -35,9 +45,20 @@ Sau dublu-click pe `run.bat`
    - OCR extrage textul si masuratorile
    - Detectie culoare identifica ferestrele (dreptunghiuri galbene)
    - Calcul suprafete nete
+   - Daca exista markup rosu/galben pe imagine, acesta are prioritate la segmentare
 3. **Verificati** rezultatele in panoul din dreapta
 4. **Editati manual** daca este necesar (butoanele + Fatada / + Fereastra / + Usa)
 5. **Exportati** in Excel sau convertiti in PDF
+   - Pentru calibrare PDF pe referinta: completati **Ref. (m)** si **Ref. (px)**
+     impreuna; altfel lasati ambele goale pentru modul standard 1:100
+
+### Mod Schita In Aplicatie
+Pentru imagini foto unde detectia full-auto nu este suficienta:
+1. Apasati **Deseneaza Fatada** si marcati conturul cu click pe puncte.
+2. Apasati **Finalizeaza Contur**.
+3. Apasati **Deseneaza Fereastra** si trasati dreptunghiurile ferestrelor.
+4. Completati **Ref. (m)** si **Ref. (px)**.
+5. Apasati **ANALIZA DIN SCHITA** pentru calcul direct.
 
 ## Structura Proiect
 
@@ -69,6 +90,9 @@ Sau dublu-click pe `run.bat`
 - OCR-ul face upscaling 2x automat pentru text mic
 - Formulele de calcul:
   - `Termosistem = Suprafata Fatada - Ferestre - Usi`
+  - `Glaf = Σ latimi ferestre`
+  - `Picurator = Σ latimi ferestre + Σ latimi usi`
+  - `Coltare = 2 x inaltime fatada` (estimare automata)
 
 ## Workflow sincronizat (5 AI)
 

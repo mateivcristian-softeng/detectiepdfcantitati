@@ -1,0 +1,69 @@
+{
+  "sample_id": "acoperisul_se_confunda_cu_fatada_raw_baci_catalina_colorized_fatada_spate",
+  "image_size": {
+    "width": 2264,
+    "height": 905
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        120,
+        301,
+        1586,
+        296
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        1414,
+        314,
+        67,
+        47
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        1536,
+        361,
+        26,
+        23
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        812,
+        415,
+        49,
+        67
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        318,
+        442,
+        1387,
+        189
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        128,
+        597,
+        173,
+        44
+      ],
+      "type": "socle"
+    }
+  ]
+}

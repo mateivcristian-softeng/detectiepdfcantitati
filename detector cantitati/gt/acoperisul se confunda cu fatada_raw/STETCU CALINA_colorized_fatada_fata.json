@@ -1,0 +1,106 @@
+{
+  "sample_id": "acoperisul_se_confunda_cu_fatada_raw_stetcu_calina_colorized_fatada_fata",
+  "image_size": {
+    "width": 1997,
+    "height": 1040
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        47,
+        254,
+        988,
+        214
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        570,
+        279,
+        87,
+        107
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        821,
+        281,
+        88,
+        102
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        222,
+        282,
+        109,
+        109
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        243,
+        307,
+        20,
+        18
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        604,
+        339,
+        22,
+        18
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [
+    {
+      "bbox": [
+        677,
+        291,
+        88,
+        166
+      ],
+      "type": "door"
+    }
+  ],
+  "socles": [
+    {
+      "bbox": [
+        48,
+        467,
+        338,
+        70
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        396,
+        467,
+        267,
+        55
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        804,
+        467,
+        227,
+        33
+      ],
+      "type": "socle"
+    }
+  ]
+}

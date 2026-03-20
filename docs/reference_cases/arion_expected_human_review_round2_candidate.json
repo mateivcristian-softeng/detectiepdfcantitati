@@ -1,0 +1,314 @@
+{
+  "reference_id": "arion_human_review_round2_2026-03-16",
+  "scene": "composite_stepped_facade",
+  "image_size": [
+    2414,
+    908
+  ],
+  "review_status": "ROUND_2_PENDING_FINAL_CHOICES",
+  "decisions_applied": {
+    "D1": "keep",
+    "D2": "REMOVED — bright wall (gray=209, dark_frac=0.001)",
+    "W1": "keep — BBOX UNLOCKED, choose from options A/B/C",
+    "W2": "keep",
+    "W3": "keep",
+    "W4": "keep",
+    "W5": "REMOVED — bright wall (gray=207, dark_frac=0.0)",
+    "W6": "REMOVED — ambiguous sidelight (gray=160, dark_frac=0.017), not a real opening"
+  },
+  "unlocked_choices": {
+    "W1_bbox": {
+      "current": [
+        1424,
+        410,
+        266,
+        166
+      ],
+      "option_A": [
+        1428,
+        449,
+        185,
+        122
+      ],
+      "option_B": [
+        1418,
+        435,
+        205,
+        145
+      ],
+      "option_C": [
+        1435,
+        430,
+        180,
+        140
+      ],
+      "recommendation": "B",
+      "chosen": null
+    },
+    "socle_contour_norm": {
+      "option_A": [
+        [
+          0.999551,
+          0.676471
+        ],
+        [
+          0.172058,
+          1.0
+        ],
+        [
+          0.001348,
+          0.988971
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.172058,
+          1.0
+        ],
+        [
+          0.996855,
+          1.0
+        ]
+      ],
+      "option_B": [
+        [
+          0.999551,
+          0.676471
+        ],
+        [
+          0.999551,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.981618
+        ]
+      ],
+      "recommendation": "A",
+      "chosen": null
+    },
+    "facade_bbox": {
+      "option_A": [
+        135,
+        176,
+        2226,
+        544
+      ],
+      "option_B": [
+        135,
+        176,
+        2226,
+        560
+      ],
+      "recommendation": "A",
+      "chosen": null
+    }
+  },
+  "kept_elements": {
+    "windows": [
+      {
+        "id": "W1",
+        "box": null,
+        "note": "bbox from unlocked_choices.W1_bbox"
+      },
+      {
+        "id": "W2",
+        "box": [
+          1912,
+          475,
+          233,
+          137
+        ]
+      },
+      {
+        "id": "W3",
+        "box": [
+          776,
+          510,
+          166,
+          192
+        ]
+      },
+      {
+        "id": "W4",
+        "box": [
+          339,
+          583,
+          160,
+          137
+        ]
+      }
+    ],
+    "doors": [
+      {
+        "id": "D1",
+        "box": [
+          1262,
+          544,
+          122,
+          176
+        ]
+      }
+    ]
+  },
+  "removed_elements": [
+    {
+      "id": "D2",
+      "box": [
+        626,
+        588,
+        101,
+        132
+      ],
+      "reason": "bright wall, synthesized from gap triplet"
+    },
+    {
+      "id": "W5",
+      "box": [
+        589,
+        601,
+        27,
+        95
+      ],
+      "reason": "bright wall sidelight"
+    },
+    {
+      "id": "W6",
+      "box": [
+        737,
+        601,
+        27,
+        95
+      ],
+      "reason": "ambiguous sidelight, not supported by raw image"
+    }
+  ],
+  "facade_contour": [
+    [
+      2360,
+      176
+    ],
+    [
+      1600,
+      176
+    ],
+    [
+      1665,
+      191
+    ],
+    [
+      1669,
+      280
+    ],
+    [
+      1586,
+      311
+    ],
+    [
+      1681,
+      319
+    ],
+    [
+      1321,
+      313
+    ],
+    [
+      1314,
+      269
+    ],
+    [
+      1280,
+      311
+    ],
+    [
+      1360,
+      377
+    ],
+    [
+      1311,
+      432
+    ],
+    [
+      468,
+      432
+    ],
+    [
+      417,
+      460
+    ],
+    [
+      399,
+      432
+    ],
+    [
+      136,
+      432
+    ],
+    [
+      138,
+      713
+    ],
+    [
+      518,
+      719
+    ],
+    [
+      2360,
+      543
+    ],
+    [
+      2360,
+      433
+    ],
+    [
+      2292,
+      430
+    ],
+    [
+      2292,
+      306
+    ],
+    [
+      2360,
+      311
+    ]
+  ],
+  "socle_contour": [
+    [
+      2360,
+      544
+    ],
+    [
+      518,
+      720
+    ],
+    [
+      138,
+      714
+    ],
+    [
+      135,
+      893
+    ],
+    [
+      518,
+      899
+    ],
+    [
+      2354,
+      724
+    ]
+  ],
+  "socle_bbox": [
+    135,
+    544,
+    2226,
+    356
+  ]
+}

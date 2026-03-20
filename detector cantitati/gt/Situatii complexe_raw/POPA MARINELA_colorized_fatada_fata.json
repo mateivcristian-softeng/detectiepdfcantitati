@@ -1,0 +1,51 @@
+{
+  "sample_id": "situatii_complexe_raw_popa_marinela_colorized_fatada_fata",
+  "image_size": {
+    "width": 2279,
+    "height": 1090
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        74,
+        319,
+        1593,
+        294
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        1070,
+        399,
+        46,
+        64
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        81,
+        612,
+        221,
+        87
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        398,
+        612,
+        1269,
+        81
+      ],
+      "type": "socle"
+    }
+  ]
+}

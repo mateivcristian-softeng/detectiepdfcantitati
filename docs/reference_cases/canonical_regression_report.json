@@ -1,0 +1,754 @@
+{
+  "generated_at": "2026-03-11",
+  "manifest": "docs\\reference_cases\\canonical_scenarios.json",
+  "baseline": "docs\\reference_cases\\canonical_regression_baseline_2026-03-12.json",
+  "cases": [
+    {
+      "id": "ROMCEA",
+      "owner": "facade-geometry",
+      "scene_class": "flat_long_facade",
+      "raw_path": "detector cantitati/raw/romcea_raw/ROMCEA MARIA_colorized_fatada_spate.png",
+      "pgw_px_per_m": 100.472,
+      "linear_scale_source": "manual_ref",
+      "image_size": [
+        1524,
+        746
+      ],
+      "scene_types": [
+        "flat_long_facade"
+      ],
+      "facades": [
+        {
+          "x": 83,
+          "y": 426,
+          "w": 1400,
+          "h": 237
+        }
+      ],
+      "windows": [
+        {
+          "x": 854,
+          "y": 411,
+          "w": 85,
+          "h": 168
+        },
+        {
+          "x": 640,
+          "y": 425,
+          "w": 84,
+          "h": 151
+        },
+        {
+          "x": 1105,
+          "y": 437,
+          "w": 167,
+          "h": 129
+        },
+        {
+          "x": 295,
+          "y": 449,
+          "w": 176,
+          "h": 128
+        }
+      ],
+      "doors": [
+        {
+          "x": 728,
+          "y": 442,
+          "w": 122,
+          "h": 210
+        }
+      ],
+      "socles": [
+        {
+          "x": 83,
+          "y": 631,
+          "w": 1400,
+          "h": 66
+        }
+      ],
+      "socle_profiles": [
+        {
+          "x": 83,
+          "y": 642,
+          "w": 1400,
+          "h": 20
+        }
+      ],
+      "shape_signatures": {
+        "facade_contour": [
+          [
+            83,
+            426
+          ],
+          [
+            1293,
+            426
+          ],
+          [
+            1357,
+            491
+          ],
+          [
+            1482,
+            491
+          ],
+          [
+            1482,
+            662
+          ],
+          [
+            83,
+            642
+          ]
+        ],
+        "socle_contour": [
+          [
+            1482,
+            631
+          ],
+          [
+            83,
+            659
+          ],
+          [
+            83,
+            696
+          ],
+          [
+            1452,
+            678
+          ],
+          [
+            1482,
+            669
+          ]
+        ],
+        "socle_profile_line": [
+          [
+            83,
+            642
+          ],
+          [
+            1483,
+            662
+          ]
+        ]
+      },
+      "geometry": {
+        "facade_left_minus_socle_left_px": 0,
+        "socle_right_minus_facade_right_px": 0,
+        "facade_bottom_minus_socle_profile_px": 11,
+        "door_bottom_gaps_px": [
+          {
+            "x_center": 789,
+            "bottom_minus_socle_profile_px": 0
+          }
+        ]
+      },
+      "reference_metrics": {
+        "reference_id": "romcea_spate_chat_2026-03-11",
+        "reference_has_geometry": false,
+        "reference_has_openings": false,
+        "reference_geometry_valid": true,
+        "reference_openings_valid": true,
+        "facade_shape_iou": null,
+        "socle_shape_iou_in_facade_bbox": null,
+        "window_box_mean_iou_in_facade_bbox": null,
+        "door_box_mean_iou_in_facade_bbox": null,
+        "reference_window_count": 0,
+        "reference_door_count": 0
+      },
+      "reference_validation": {
+        "issues": [],
+        "geometry_valid": true,
+        "openings_valid": true,
+        "image_size_match": true
+      },
+      "warnings": [],
+      "focus": [
+        "upper-right facade contour should follow the eave, not right-edge noise",
+        "facade lower cutoff should stop exactly at socle top",
+        "socle should reach the left bottom edge and follow terrain variation",
+        "central cluster must remain window + door + window"
+      ],
+      "checks": [
+        "ROMCEA reference geometry target missing; UI review remains mandatory"
+      ],
+      "delta_vs_baseline": {
+        "changed": true,
+        "messages": [
+          "facades bbox delta=23px",
+          "facade_contour changed (delta=1000000)"
+        ]
+      }
+    },
+    {
+      "id": "ARION",
+      "owner": "opening-detector",
+      "scene_class": "composite_stepped_facade",
+      "raw_path": "detector cantitati/raw/usa + fereastra alaturate_raw/ARION SIMION_colorized_fatada_fata.png",
+      "pgw_px_per_m": 100.472,
+      "linear_scale_source": "manual_ref",
+      "image_size": [
+        2414,
+        908
+      ],
+      "scene_types": [
+        "composite_stepped_facade"
+      ],
+      "facades": [
+        {
+          "x": 136,
+          "y": 155,
+          "w": 2225,
+          "h": 574
+        }
+      ],
+      "windows": [
+        {
+          "x": 1424,
+          "y": 418,
+          "w": 266,
+          "h": 158
+        },
+        {
+          "x": 1912,
+          "y": 418,
+          "w": 233,
+          "h": 158
+        },
+        {
+          "x": 339,
+          "y": 592,
+          "w": 160,
+          "h": 128
+        },
+        {
+          "x": 576,
+          "y": 592,
+          "w": 85,
+          "h": 128
+        },
+        {
+          "x": 737,
+          "y": 592,
+          "w": 27,
+          "h": 128
+        },
+        {
+          "x": 776,
+          "y": 592,
+          "w": 166,
+          "h": 128
+        }
+      ],
+      "doors": [
+        {
+          "x": 1179,
+          "y": 544,
+          "w": 134,
+          "h": 185
+        },
+        {
+          "x": 626,
+          "y": 588,
+          "w": 101,
+          "h": 141
+        }
+      ],
+      "socles": [
+        {
+          "x": 135,
+          "y": 543,
+          "w": 2226,
+          "h": 365
+        }
+      ],
+      "socle_profiles": [
+        {
+          "x": 131,
+          "y": 529,
+          "w": 2229,
+          "h": 88
+        }
+      ],
+      "shape_signatures": {
+        "facade_contour": [
+          [
+            136,
+            728
+          ],
+          [
+            136,
+            432
+          ],
+          [
+            399,
+            432
+          ],
+          [
+            410,
+            460
+          ],
+          [
+            468,
+            432
+          ],
+          [
+            1279,
+            432
+          ],
+          [
+            1280,
+            309
+          ],
+          [
+            1314,
+            269
+          ],
+          [
+            1330,
+            314
+          ],
+          [
+            1585,
+            335
+          ],
+          [
+            1602,
+            170
+          ],
+          [
+            2360,
+            164
+          ],
+          [
+            2360,
+            617
+          ],
+          [
+            1329,
+            617
+          ],
+          [
+            1328,
+            728
+          ]
+        ],
+        "socle_contour": [
+          [
+            135,
+            543
+          ],
+          [
+            136,
+            728
+          ],
+          [
+            1328,
+            728
+          ],
+          [
+            1329,
+            617
+          ],
+          [
+            2360,
+            617
+          ],
+          [
+            2360,
+            821
+          ],
+          [
+            1330,
+            823
+          ],
+          [
+            1328,
+            907
+          ],
+          [
+            136,
+            907
+          ]
+        ],
+        "socle_profile_line": [
+          [
+            131,
+            529
+          ],
+          [
+            136,
+            728
+          ],
+          [
+            1328,
+            728
+          ],
+          [
+            1329,
+            617
+          ],
+          [
+            2360,
+            617
+          ]
+        ]
+      },
+      "geometry": {
+        "facade_left_minus_socle_left_px": 1,
+        "socle_right_minus_facade_right_px": 0,
+        "facade_bottom_minus_socle_profile_px": 1,
+        "door_bottom_gaps_px": [
+          {
+            "x_center": 1246,
+            "bottom_minus_socle_profile_px": 1
+          },
+          {
+            "x_center": 676,
+            "bottom_minus_socle_profile_px": 1
+          }
+        ]
+      },
+      "reference_metrics": {
+        "reference_id": "arion_reviewed_raw_v3_2026-03-19",
+        "reference_has_geometry": true,
+        "reference_has_openings": true,
+        "reference_geometry_valid": true,
+        "reference_openings_valid": true,
+        "facade_shape_iou": 0.8605,
+        "socle_shape_iou_in_facade_bbox": 0.2193,
+        "window_box_mean_iou_in_facade_bbox": 0.559,
+        "door_box_mean_iou_in_facade_bbox": 0.6092,
+        "reference_window_count": 6,
+        "reference_door_count": 2
+      },
+      "reference_validation": {
+        "issues": [],
+        "geometry_valid": true,
+        "openings_valid": true,
+        "image_size_match": true
+      },
+      "warnings": [],
+      "focus": [
+        "recover the double brown door cluster",
+        "recover the central door with adjacent sidelights/windows",
+        "keep the merged stepped facade body instead of collapsing to the lower band"
+      ],
+      "checks": [
+        "socle shape IoU below target: 0.219"
+      ],
+      "delta_vs_baseline": {
+        "changed": true,
+        "messages": [
+          "facades bbox delta=157px",
+          "socles bbox delta=1362px",
+          "facade_contour changed (delta=1000000)",
+          "socle_contour changed (delta=1000000)",
+          "socle_profile_line changed (delta=1000000)",
+          "window geometry delta=82px",
+          "door geometry delta=144px"
+        ]
+      }
+    },
+    {
+      "id": "MARGINEAN_DREAPTA",
+      "owner": "facade-geometry",
+      "scene_class": "gable_facade",
+      "raw_path": "detector cantitati/raw/2 imagini pe fundal alb 2 imagini pe fundal negru/MARGINEAN ANA_colorized_fatada_dreapta.png",
+      "pgw_px_per_m": null,
+      "linear_scale_source": "auto_assumed",
+      "image_size": [
+        735,
+        689
+      ],
+      "scene_types": [
+        "gable_facade"
+      ],
+      "facades": [
+        {
+          "x": 53,
+          "y": 184,
+          "w": 628,
+          "h": 362
+        }
+      ],
+      "windows": [],
+      "doors": [],
+      "socles": [
+        {
+          "x": 67,
+          "y": 545,
+          "w": 604,
+          "h": 29
+        }
+      ],
+      "socle_profiles": [
+        {
+          "x": 67,
+          "y": 545,
+          "w": 603,
+          "h": 1
+        }
+      ],
+      "shape_signatures": {
+        "facade_contour": [
+          [
+            53,
+            314
+          ],
+          [
+            219,
+            184
+          ],
+          [
+            680,
+            419
+          ],
+          [
+            680,
+            545
+          ],
+          [
+            53,
+            545
+          ]
+        ],
+        "socle_contour": [
+          [
+            670,
+            545
+          ],
+          [
+            669,
+            573
+          ],
+          [
+            68,
+            573
+          ],
+          [
+            67,
+            546
+          ],
+          [
+            67,
+            573
+          ],
+          [
+            670,
+            573
+          ]
+        ],
+        "socle_profile_line": [
+          [
+            67,
+            546
+          ],
+          [
+            670,
+            545
+          ]
+        ]
+      },
+      "geometry": {
+        "facade_left_minus_socle_left_px": -14,
+        "socle_right_minus_facade_right_px": -10,
+        "facade_bottom_minus_socle_profile_px": 0,
+        "door_bottom_gaps_px": []
+      },
+      "reference_metrics": {
+        "reference_id": "marginean_dreapta_processed_reference",
+        "reference_has_geometry": true,
+        "reference_has_openings": false,
+        "reference_geometry_valid": true,
+        "reference_openings_valid": true,
+        "facade_shape_iou": 0.7731,
+        "socle_shape_iou_in_facade_bbox": 0.9581,
+        "window_box_mean_iou_in_facade_bbox": null,
+        "door_box_mean_iou_in_facade_bbox": null,
+        "reference_window_count": 0,
+        "reference_door_count": 0
+      },
+      "reference_validation": {
+        "issues": [
+          "reference image_size does not match raw PNG dimensions"
+        ],
+        "geometry_valid": true,
+        "openings_valid": true,
+        "image_size_match": false
+      },
+      "warnings": [
+        "Scara liniara a fost estimata automat din 1:100 (din setari) + DPI (config). Pentru precizie maxima puteti introduce Ref. (m) + Ref. (px)."
+      ],
+      "focus": [
+        "complete the full gable body through the bright/white gap",
+        "do not stop the facade at the white transition",
+        "keep zero false openings in the lower-right dark region"
+      ],
+      "checks": [],
+      "delta_vs_baseline": {
+        "changed": true,
+        "messages": [
+          "facades bbox delta=330px",
+          "socles bbox delta=316px",
+          "facade_contour changed (delta=1000000)",
+          "socle_contour changed (delta=1000000)",
+          "socle_profile_line changed (delta=427)"
+        ]
+      }
+    },
+    {
+      "id": "MUNTEAN_STANGA",
+      "owner": "scene-router",
+      "scene_class": "sparse_openings_flat",
+      "raw_path": "detector cantitati/raw/2 imagini pe fundal alb 2 imagini pe fundal negru/MUNTEAN LUCRETIA_colorized_fatada_stanga.png",
+      "pgw_px_per_m": null,
+      "linear_scale_source": "auto_assumed",
+      "image_size": [
+        705,
+        572
+      ],
+      "scene_types": [
+        "sparse_openings_flat"
+      ],
+      "facades": [
+        {
+          "x": 36,
+          "y": 213,
+          "w": 645,
+          "h": 339
+        }
+      ],
+      "windows": [
+        {
+          "x": 207,
+          "y": 318,
+          "w": 153,
+          "h": 112
+        }
+      ],
+      "doors": [],
+      "socles": [
+        {
+          "x": 36,
+          "y": 551,
+          "w": 647,
+          "h": 21
+        }
+      ],
+      "socle_profiles": [
+        {
+          "x": 36,
+          "y": 551,
+          "w": 645,
+          "h": 1
+        }
+      ],
+      "shape_signatures": {
+        "facade_contour": [
+          [
+            680,
+            262
+          ],
+          [
+            674,
+            551
+          ],
+          [
+            36,
+            551
+          ],
+          [
+            55,
+            213
+          ]
+        ],
+        "socle_contour": [
+          [
+            36,
+            551
+          ],
+          [
+            38,
+            571
+          ],
+          [
+            682,
+            571
+          ],
+          [
+            681,
+            552
+          ],
+          [
+            679,
+            570
+          ],
+          [
+            40,
+            569
+          ]
+        ],
+        "socle_profile_line": [
+          [
+            36,
+            551
+          ],
+          [
+            681,
+            552
+          ]
+        ]
+      },
+      "geometry": {
+        "facade_left_minus_socle_left_px": 0,
+        "socle_right_minus_facade_right_px": 2,
+        "facade_bottom_minus_socle_profile_px": 0,
+        "door_bottom_gaps_px": []
+      },
+      "reference_metrics": {
+        "reference_id": "muntean_stanga_processed_reference",
+        "reference_has_geometry": true,
+        "reference_has_openings": false,
+        "reference_geometry_valid": true,
+        "reference_openings_valid": true,
+        "facade_shape_iou": 0.7703,
+        "socle_shape_iou_in_facade_bbox": 0.7171,
+        "window_box_mean_iou_in_facade_bbox": null,
+        "door_box_mean_iou_in_facade_bbox": null,
+        "reference_window_count": 0,
+        "reference_door_count": 0
+      },
+      "reference_validation": {
+        "issues": [
+          "reference image_size does not match raw PNG dimensions"
+        ],
+        "geometry_valid": true,
+        "openings_valid": true,
+        "image_size_match": false
+      },
+      "warnings": [
+        "Scara liniara a fost estimata automat din 1:100 (din setari) + DPI (config). Pentru precizie maxima puteti introduce Ref. (m) + Ref. (px)."
+      ],
+      "focus": [
+        "keep the one real window only",
+        "suppress fake door + sidelight pair on the right",
+        "include the right-side attachment in the final silhouette"
+      ],
+      "checks": [],
+      "delta_vs_baseline": {
+        "changed": true,
+        "messages": [
+          "facades bbox delta=44px",
+          "socles bbox delta=77px",
+          "facade_contour changed (delta=1000000)",
+          "socle_contour changed (delta=1000000)",
+          "socle_profile_line changed (delta=66)"
+        ]
+      }
+    }
+  ]
+}

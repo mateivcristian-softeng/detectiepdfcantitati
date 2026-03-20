@@ -1,0 +1,51 @@
+{
+  "reference_id": "romcea_spate_chat_2026-03-11",
+  "raw_image": "detector cantitati/raw/romcea_raw/ROMCEA MARIA_colorized_fatada_spate.png",
+  "worldfile": "detector cantitati/raw/romcea_raw/ROMCEA MARIA_colorized_fatada_spate.pgw",
+  "canonical_reference_image": "assets/reference/romcea_spate_expected_reference_chat_2026-03-11.png",
+  "canonical_reference_status": "reserved_path_pending_exact_png_export_from_chat",
+  "scenario": "flat_facade_central_door_with_sidelights",
+  "targets": {
+    "facade_net_area_m2": 24.81,
+    "socle_area_m2": 5.24,
+    "openings": [
+      {
+        "id": "window_left",
+        "type": "window",
+        "target_area_m2": 1.80,
+        "notes": "standalone left window"
+      },
+      {
+        "id": "window_sidelight_left",
+        "type": "window",
+        "target_area_m2": 1.15,
+        "notes": "narrow left sidelight adjacent to door"
+      },
+      {
+        "id": "door_center",
+        "type": "door",
+        "target_area_m2": 2.88,
+        "notes": "central door between sidelights"
+      },
+      {
+        "id": "window_sidelight_right",
+        "type": "window",
+        "target_area_m2": 1.15,
+        "notes": "narrow right sidelight adjacent to door"
+      },
+      {
+        "id": "window_right",
+        "type": "window",
+        "target_area_m2": 1.95,
+        "notes": "standalone right window"
+      }
+    ]
+  },
+  "geometry_rules": {
+    "facade_top": "follow_eave_without_roof_noise",
+    "facade_bottom": "stop_at_socle_top",
+    "socle_lower_edge": "slightly_sloped",
+    "socle_profile": "line_segment_only",
+    "central_cluster": "window_left_of_door + door + window_right_of_door"
+  }
+}

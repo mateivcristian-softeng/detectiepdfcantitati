@@ -52,11 +52,11 @@ if ([string]::IsNullOrWhiteSpace($WorktreeRoot)) {
 New-Item -ItemType Directory -Force -Path $WorktreeRoot | Out-Null
 
 $agents = @(
-    [PSCustomObject]@{ Name = "AI1"; Branch = "feat/ai1-ingest-scale";  Folder = "ai1-ingest-scale";  Focus = "Ingest + scara + OCR" },
-    [PSCustomObject]@{ Name = "AI2"; Branch = "feat/ai2-detectie-cv";   Folder = "ai2-detectie-cv";   Focus = "Detectie fatade/ferestre/usi" },
-    [PSCustomObject]@{ Name = "AI3"; Branch = "feat/ai3-calcule-excel"; Folder = "ai3-calcule-excel"; Focus = "Calcule + export Excel" },
-    [PSCustomObject]@{ Name = "AI4"; Branch = "feat/ai4-gui-annotare";  Folder = "ai4-gui-annotare";  Focus = "GUI + corectii manuale" },
-    [PSCustomObject]@{ Name = "AI5"; Branch = "feat/ai5-testare-ci";    Folder = "ai5-testare-ci";    Focus = "Testing + CI + docs" }
+    [PSCustomObject]@{ Name = "AI1"; Branch = "feat/ai1-quickwins-cv";      Folder = "ai1-quickwins-cv";      Focus = "Quick wins OpenCV (roof/window/facade)" },
+    [PSCustomObject]@{ Name = "AI2"; Branch = "feat/ai2-medium-classic-ml"; Folder = "ai2-medium-classic-ml"; Focus = "Refinare clasica + validator" },
+    [PSCustomObject]@{ Name = "AI3"; Branch = "feat/ai3-major-foundation";  Folder = "ai3-major-foundation";  Focus = "Adaptor modele segmentare (opt-in)" },
+    [PSCustomObject]@{ Name = "AI4"; Branch = "feat/ai4-data-annotations";  Folder = "ai4-data-annotations";  Focus = "Schema/anotari/date" },
+    [PSCustomObject]@{ Name = "AI5"; Branch = "feat/ai5-metrics-eval";      Folder = "ai5-metrics-eval";      Focus = "Metrici, evaluator, CI gate" }
 )
 
 Invoke-Git -Path $RepoPath -GitArgs @("rev-parse", "--is-inside-work-tree") | Out-Null

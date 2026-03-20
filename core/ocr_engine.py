@@ -208,6 +208,54 @@ class OCREngine:
             return float(s[:2] + "." + s[2:])
         return val
 
+    @staticmethod
+    def _area_bounds_for_region(region_type: str) -> tuple:
+        if region_type == "window":
+            return (0.1, 15.0)
+        if region_type == "door":
+            return (0.5, 6.5)
+        if region_type == "facade":
+            return (1.0, 5000.0)
+        return (0.05, 5000.0)
+
+    @staticmethod
+    def _dimension_bounds_for_region(region_type: str) -> tuple:
+        if region_type == "window":
+            return (0.2, 4.5)
+        if region_type == "door":
+            return (0.6, 3.5)
+        if region_type == "facade":
+            return (0.5, 100.0)
+        return (0.2, 50.0)
+
+    def _pick_dimension_pair(self, dims: list, area_min: float,
+                             area_max: float) -> Optional[tuple]:
+        vals = sorted(set(float(v) for v in dims))
+        if len(vals) < 2:
+            return None
+
+        best = None
+        best_score = float("inf")
+        for i in range(len(vals)):
+            for j in range(i + 1, len(vals)):
+                a = vals[i]
+                b = vals[j]
+                area = a * b
+                if not (area_min <= area <= area_max):
+                    continue
+
+                # Prefer compact pairs over very different dimensions.
+                score = abs(a - b)
+                if score < best_score:
+                    best_score = score
+                    best = (max(a, b), min(a, b))
+
+        if best:
+            return best
+
+        # Fallback: take two smallest values if no pair is plausible.
+        return (vals[1], vals[0])
+
     def enrich_regions(self, image: np.ndarray, regions: list) -> list:
         """Run OCR on each detected region and populate its fields."""
         for region in regions:
@@ -215,21 +263,33 @@ class OCREngine:
             texts = [r.text for r in ocr_results]
             region.ocr_text = " | ".join(texts)
 
-            areas = self.find_area_values(ocr_results)
-            if areas:
-                areas.sort(key=lambda a: a.parsed_value, reverse=True)
-                region.area_m2 = areas[0].parsed_value
+            region_type = getattr(region, "region_type", "")
+            area_min, area_max = self._area_bounds_for_region(region_type)
+            dim_min, dim_max = self._dimension_bounds_for_region(region_type)
 
-            dims = self.find_dimension_values(ocr_results)
-            if len(dims) >= 2:
-                vals = sorted([d.parsed_value for d in dims], reverse=True)
-                region.width_m = vals[0]
-                region.height_m = vals[1]
-            elif len(dims) == 1 and region.area_m2:
-                region.width_m = dims[0].parsed_value
-                region.height_m = round(
-                    region.area_m2 / dims[0].parsed_value, 3
-                )
+            area_vals = [
+                a.parsed_value for a in self.find_area_values(ocr_results)
+                if a.parsed_value is not None and area_min <= a.parsed_value <= area_max
+            ]
+            if area_vals:
+                region.area_m2 = float(np.median(area_vals))
+
+            dim_vals = [
+                d.parsed_value for d in self.find_dimension_values(ocr_results)
+                if d.parsed_value is not None and dim_min <= d.parsed_value <= dim_max
+            ]
+            if len(dim_vals) >= 2:
+                pair = self._pick_dimension_pair(dim_vals, area_min, area_max)
+                if pair:
+                    region.width_m, region.height_m = pair
+                    if not region.area_m2:
+                        inferred_area = round(region.width_m * region.height_m, 3)
+                        if area_min <= inferred_area <= area_max:
+                            region.area_m2 = inferred_area
+            elif len(dim_vals) == 1 and region.area_m2:
+                region.width_m = float(dim_vals[0])
+                if region.width_m > 0:
+                    region.height_m = round(region.area_m2 / region.width_m, 3)
 
             labels = self.find_labels(ocr_results)
             if labels:

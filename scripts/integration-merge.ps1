@@ -3,11 +3,11 @@ param(
     [string]$RepoPath = "",
     [string]$IntegrationBranch = "integration",
     [string[]]$FeatureBranches = @(
-        "feat/ai1-ingest-scale",
-        "feat/ai2-detectie-cv",
-        "feat/ai3-calcule-excel",
-        "feat/ai4-gui-annotare",
-        "feat/ai5-testare-ci"
+        "feat/ai1-quickwins-cv",
+        "feat/ai2-medium-classic-ml",
+        "feat/ai3-major-foundation",
+        "feat/ai4-data-annotations",
+        "feat/ai5-metrics-eval"
     ),
     [string]$TestCommand = "python -m compileall .",
     [switch]$NoPush

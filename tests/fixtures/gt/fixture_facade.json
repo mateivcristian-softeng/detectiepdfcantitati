@@ -1,0 +1,17 @@
+{
+  "facades": [
+    {
+      "name": "Fatada 1",
+      "bbox": [40, 40, 320, 220],
+      "area_m2": 70.4,
+      "total_area_m2": 70.4
+    }
+  ],
+  "windows": [
+    {
+      "label": "F1",
+      "bbox": [140, 110, 120, 80],
+      "area_m2": 1.2
+    }
+  ]
+}

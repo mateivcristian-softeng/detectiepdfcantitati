@@ -1,0 +1,42 @@
+{
+  "sample_id": "acoperisul_se_confunda_cu_fatada_raw_popa_marinela_2_colorized_fatada_fata",
+  "image_size": {
+    "width": 1423,
+    "height": 988
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        107,
+        236,
+        813,
+        348
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        269,
+        407,
+        74,
+        90
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        107,
+        584,
+        813,
+        48
+      ],
+      "type": "socle"
+    }
+  ]
+}

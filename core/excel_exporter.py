@@ -41,7 +41,9 @@ class ExcelExporter:
         self.ws = None
 
     def export(self, report: ProjectReport, output_path: str,
-               project_name: str = "") -> str:
+               project_name: str = "",
+               cnp: str = "", beneficiar: str = "",
+               localitate: str = "") -> str:
         """Export a ProjectReport to a formatted Excel file."""
         self.wb = Workbook()
         self.ws = self.wb.active
@@ -53,6 +55,8 @@ class ExcelExporter:
         self._write_grand_totals(report, row)
         self._auto_column_widths()
         self._add_summary_sheet(report, project_name)
+        self._add_quantities_sheet(report, cnp=cnp, beneficiar=beneficiar,
+                                    localitate=localitate)
 
         os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
         self.wb.save(output_path)
@@ -191,6 +195,13 @@ class ExcelExporter:
             ("TOTAL TAMPLARIE (Ferestre + Usi)", report.total_carpentry_area),
             ("TOTAL TERMOSISTEM (Fatade - Tamplarie)",
              report.total_thermosystem_area),
+            ("TOTAL SOCLU EXCLUS", report.total_socle_excluded_area_m2),
+            ("TOTAL GLAF EXTERIOR", report.total_sill_length_m),
+            ("TOTAL PICURATOR GOLURI", report.total_drip_profile_length_m),
+            ("TOTAL LUNGIME COLTARE", report.total_corner_length_m),
+            ("TOTAL PICURATOR SOCLU", report.total_socle_drip_profile_length_m),
+            ("TOTAL PERIMETRU FERESTRE", report.total_window_perimeter_length_m),
+            ("TOTAL PERIMETRU USI", report.total_door_perimeter_length_m),
         ]
 
         for label, value in totals:
@@ -231,13 +242,24 @@ class ExcelExporter:
     def _add_summary_sheet(self, report: ProjectReport, project_name: str):
         ws = self.wb.create_sheet("Sumar")
 
-        ws.merge_cells("A1:D1")
+        ws.merge_cells("A1:K1")
         ws["A1"].value = "SUMAR PROIECT"
         ws["A1"].font = Font(name="Calibri", size=14, bold=True, color="1F4E79")
         ws["A1"].alignment = Alignment(horizontal="center")
 
-        headers = ["Fatada", "Sup. Totala (m²)", "Tamplarie (m²)",
-                   "Termosistem (m²)"]
+        headers = [
+            "Fatada",
+            "Sup. Totala (m²)",
+            "Tamplarie (m²)",
+            "Termosistem (m²)",
+            "Soclu exclus (m²)",
+            "Glaf exterior (m)",
+            "Picurator goluri (m)",
+            "Coltare (m)",
+            "Picurator soclu (m)",
+            "Perimetru ferestre (m)",
+            "Perimetru usi (m)",
+        ]
         for col, h in enumerate(headers, 1):
             cell = ws.cell(row=3, column=col, value=h)
             cell.font = HEADER_FONT
@@ -247,8 +269,19 @@ class ExcelExporter:
 
         row = 4
         for f in report.facades:
-            vals = [f.name, f.total_area_m2, f.total_carpentry_area,
-                    f.net_thermosystem_area]
+            vals = [
+                f.name,
+                f.total_area_m2,
+                f.total_carpentry_area,
+                f.net_thermosystem_area,
+                f.socle_excluded_area_m2,
+                f.sill_length_m,
+                f.drip_profile_length_m,
+                f.corner_length_m,
+                f.socle_drip_profile_length_m,
+                f.window_perimeter_length_m,
+                f.door_perimeter_length_m,
+            ]
             for col, val in enumerate(vals, 1):
                 cell = ws.cell(row=row, column=col, value=val)
                 cell.border = THIN_BORDER
@@ -258,8 +291,19 @@ class ExcelExporter:
                     cell.alignment = Alignment(horizontal="right")
             row += 1
 
-        vals = ["TOTAL", report.total_facade_area, report.total_carpentry_area,
-                report.total_thermosystem_area]
+        vals = [
+            "TOTAL",
+            report.total_facade_area,
+            report.total_carpentry_area,
+            report.total_thermosystem_area,
+            report.total_socle_excluded_area_m2,
+            report.total_sill_length_m,
+            report.total_drip_profile_length_m,
+            report.total_corner_length_m,
+            report.total_socle_drip_profile_length_m,
+            report.total_window_perimeter_length_m,
+            report.total_door_perimeter_length_m,
+        ]
         for col, val in enumerate(vals, 1):
             cell = ws.cell(row=row, column=col, value=val)
             cell.font = GRAND_FONT
@@ -269,5 +313,145 @@ class ExcelExporter:
                 cell.number_format = NUM_FMT
                 cell.alignment = Alignment(horizontal="right")
 
-        for col in range(1, 5):
+        for col in range(1, 12):
             ws.column_dimensions[get_column_letter(col)].width = 22
+
+    def _add_quantities_sheet(self, report: ProjectReport, cnp: str = "",
+                               beneficiar: str = "", localitate: str = ""):
+        """Add 'Lista Cantitati' sheet — A4 portrait format with 4 sections."""
+        ws = self.wb.create_sheet("Lista Cantitati")
+        ws.page_setup.orientation = "portrait"
+        ws.page_setup.paperSize = ws.PAPERSIZE_A4
+        ws.page_margins.left = 0.5
+        ws.page_margins.right = 0.5
+
+        # Column widths: A=description, B=mp, C=ml
+        ws.column_dimensions["A"].width = 42
+        ws.column_dimensions["B"].width = 14
+        ws.column_dimensions["C"].width = 14
+
+        SECTION_FILL = PatternFill(start_color="1F4E79", end_color="1F4E79", fill_type="solid")
+        SECTION_FONT = Font(name="Calibri", size=11, bold=True, color="FFFFFF")
+        LABEL_FONT = Font(name="Calibri", size=10)
+        VALUE_FONT = Font(name="Calibri", size=10, bold=True)
+        HEADER_BIG = Font(name="Calibri", size=14, bold=True, color="1F4E79")
+        INFO_FONT = Font(name="Calibri", size=10, color="333333")
+        TOTAL_BG = PatternFill(start_color="C6EFCE", end_color="C6EFCE", fill_type="solid")
+        TOTAL_FNT = Font(name="Calibri", size=11, bold=True, color="006100")
+        border = THIN_BORDER
+
+        row = 1
+
+        # ── HEADER ──
+        ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=3)
+        c = ws.cell(row=row, column=1, value="LISTA CANTITĂȚI TERMOIZOLARE")
+        c.font = HEADER_BIG
+        c.alignment = Alignment(horizontal="center")
+        row += 1
+
+        for label, value in [("CNP:", cnp), ("Beneficiar:", beneficiar),
+                              ("Localitate:", localitate)]:
+            if value:
+                ws.cell(row=row, column=1, value=label).font = INFO_FONT
+                ws.cell(row=row, column=2, value=value).font = Font(
+                    name="Calibri", size=10, bold=True)
+                row += 1
+
+        ws.cell(row=row, column=1,
+                value=f"Generat: {datetime.now().strftime('%d.%m.%Y')}").font = Font(
+                    name="Calibri", size=8, italic=True, color="999999")
+        row += 2
+
+        def section_header(title):
+            nonlocal row
+            for col in range(1, 4):
+                c = ws.cell(row=row, column=col, value=title if col == 1 else "")
+                c.font = SECTION_FONT
+                c.fill = SECTION_FILL
+                c.border = border
+            ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=3)
+            row += 1
+            # Column sub-headers
+            ws.cell(row=row, column=1, value="Descriere").font = LABEL_FONT
+            ws.cell(row=row, column=2, value="mp").font = LABEL_FONT
+            ws.cell(row=row, column=3, value="ml").font = LABEL_FONT
+            for col in range(1, 4):
+                ws.cell(row=row, column=col).border = border
+                ws.cell(row=row, column=col).alignment = Alignment(horizontal="center")
+            row += 1
+
+        def data_row(label, mp=None, ml=None):
+            nonlocal row
+            ws.cell(row=row, column=1, value=label).font = LABEL_FONT
+            ws.cell(row=row, column=1).border = border
+            if mp is not None:
+                c = ws.cell(row=row, column=2, value=round(mp, 2))
+                c.font = VALUE_FONT
+                c.number_format = '#,##0.00'
+                c.alignment = Alignment(horizontal="right")
+            ws.cell(row=row, column=2).border = border
+            if ml is not None:
+                c = ws.cell(row=row, column=3, value=round(ml, 2))
+                c.font = VALUE_FONT
+                c.number_format = '#,##0.00'
+                c.alignment = Alignment(horizontal="right")
+            ws.cell(row=row, column=3).border = border
+            row += 1
+
+        def total_row(label, mp=None, ml=None):
+            nonlocal row
+            for col in range(1, 4):
+                ws.cell(row=row, column=col).fill = TOTAL_BG
+                ws.cell(row=row, column=col).border = border
+            ws.cell(row=row, column=1, value=label).font = TOTAL_FNT
+            if mp is not None:
+                c = ws.cell(row=row, column=2, value=round(mp, 2))
+                c.font = TOTAL_FNT
+                c.number_format = '#,##0.00'
+                c.alignment = Alignment(horizontal="right")
+            if ml is not None:
+                c = ws.cell(row=row, column=3, value=round(ml, 2))
+                c.font = TOTAL_FNT
+                c.number_format = '#,##0.00'
+                c.alignment = Alignment(horizontal="right")
+            row += 1
+
+        # ── SECTION 1: SUPRAFETE PRINCIPALE ──
+        section_header("1. SUPRAFEȚE PRINCIPALE")
+        data_row("Pod termoizolat", mp=0)  # placeholder — from floor plan (P1)
+        data_row("Fațade total", mp=report.total_facade_area)
+        data_row("Fațade fără goluri (termosistem)", mp=report.total_thermosystem_area)
+        data_row("Vată minerală coșuri de fum", mp=0)  # manual input
+        row += 1
+
+        # ── SECTION 2: FERESTRE ──
+        section_header("2. FERESTRE")
+        data_row("Suprafață ferestre", mp=report.total_windows_area)
+        data_row("Ferestre de înlocuit", mp=report.total_windows_area)
+        data_row("Perimetru ferestre", ml=report.total_window_perimeter_length_m)
+        data_row("Glaf exterior", ml=report.total_sill_length_m)
+        data_row("Glaf interior", ml=report.total_sill_length_m)
+        data_row("Colțare ferestre", ml=report.total_corner_length_m)
+        data_row("Profil picurător ferestre", ml=report.total_sill_length_m)
+        data_row("Șpaleți ferestre", mp=0)  # needs wall thickness
+        row += 1
+
+        # ── SECTION 3: USI ──
+        section_header("3. UȘI")
+        data_row("Suprafață uși", mp=report.total_doors_area)
+        data_row("Uși de înlocuit", mp=report.total_doors_area)
+        data_row("Perimetru uși", ml=report.total_door_perimeter_length_m)
+        data_row("Colțare uși", ml=0)  # TODO: compute from door heights
+        data_row("Profil picurător uși", ml=0)  # TODO
+        data_row("Șpaleți uși", mp=0)  # needs wall thickness
+        row += 1
+
+        # ── SECTION 4: ELEMENTE PERIMETRALE ──
+        section_header("4. ELEMENTE PERIMETRALE")
+        data_row("Profil picurător soclu", ml=report.total_socle_drip_profile_length_m)
+        data_row("Colțar exterior", ml=0)  # TODO: from facade geometry
+        data_row("Finisaj interior", mp=0)  # TODO: perimeter × height
+        row += 1
+
+        # ── TOTAL ──
+        total_row("TOTAL goluri (uși + ferestre)", mp=report.total_carpentry_area)

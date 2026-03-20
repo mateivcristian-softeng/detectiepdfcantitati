@@ -1,0 +1,60 @@
+{
+  "sample_id": "acoperisul_se_confunda_cu_fatada_raw_popa_marinela_colorized_fatada_dreapta",
+  "image_size": {
+    "width": 1426,
+    "height": 1078
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        120,
+        337,
+        832,
+        341
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        667,
+        494,
+        142,
+        97
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        271,
+        497,
+        141,
+        100
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        338,
+        552,
+        24,
+        21
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        125,
+        677,
+        830,
+        59
+      ],
+      "type": "socle"
+    }
+  ]
+}

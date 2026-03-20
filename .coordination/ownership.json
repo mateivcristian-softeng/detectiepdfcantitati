@@ -34,6 +34,45 @@
       "requirements.txt",
       "README.md",
       ".github/"
+    ],
+    "feat/ai1-quickwins-cv": [
+      "core/color_detector.py",
+      "config.py",
+      "docs/AGENT_EXECUTION_PLAN_AUTOCONTOUR.md"
+    ],
+    "feat/ai2-medium-classic-ml": [
+      "core/pipeline.py",
+      "core/photo_refiner.py",
+      "core/window_validator.py",
+      "requirements.txt"
+    ],
+    "feat/ai3-major-foundation": [
+      "core/foundation_adapter.py",
+      "core/foundation_segmentation.py",
+      "docs/FOUNDATION_MODEL_PLAN.md",
+      "requirements-optional.txt"
+    ],
+    "feat/ai4-data-annotations": [
+      "data/",
+      "tools/data_prep/",
+      "docs/DATASET_SCHEMA.md",
+      "docs/DATA_COLLECTION_GUIDE.md"
+    ],
+    "feat/ai5-metrics-eval": [
+      "tests/",
+      "tools/eval/",
+      "test_pipeline.py",
+      ".github/workflows/",
+      "docs/METRICS_TARGETS.md"
+    ]
+  },
+  "sprintProfiles": {
+    "autocontour-photo-hardening": [
+      "feat/ai1-quickwins-cv",
+      "feat/ai2-medium-classic-ml",
+      "feat/ai3-major-foundation",
+      "feat/ai4-data-annotations",
+      "feat/ai5-metrics-eval"
     ]
   }
 }

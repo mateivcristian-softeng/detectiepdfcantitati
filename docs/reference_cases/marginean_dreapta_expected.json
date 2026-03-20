@@ -1,0 +1,127 @@
+{
+  "reference_id": "marginean_dreapta_processed_reference",
+  "scene": "gable_facade",
+  "processed_reference_path": "detector cantitati\\procesate\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_dreapta_procesat.png",
+  "image_size": [
+    1355,
+    1154
+  ],
+  "targets": {
+    "facade_bbox": [
+      149,
+      85,
+      956,
+      936
+    ],
+    "socle_bbox": [
+      173,
+      1020,
+      916,
+      74
+    ],
+    "facade_contour": [
+      [
+        1104,
+        536
+      ],
+      [
+        651,
+        85
+      ],
+      [
+        149,
+        549
+      ],
+      [
+        162,
+        578
+      ],
+      [
+        162,
+        1020
+      ],
+      [
+        1087,
+        1020
+      ]
+    ],
+    "socle_contour": [
+      [
+        1088,
+        1020
+      ],
+      [
+        1086,
+        1092
+      ],
+      [
+        175,
+        1092
+      ],
+      [
+        173,
+        1021
+      ],
+      [
+        173,
+        1093
+      ],
+      [
+        1088,
+        1093
+      ]
+    ],
+    "facade_contour_norm_in_bbox": [
+      [
+        0.998954,
+        0.481838
+      ],
+      [
+        0.525105,
+        0.0
+      ],
+      [
+        0.0,
+        0.495726
+      ],
+      [
+        0.013598,
+        0.526709
+      ],
+      [
+        0.013598,
+        0.998932
+      ],
+      [
+        0.981172,
+        0.998932
+      ]
+    ],
+    "socle_contour_norm_in_facade_bbox": [
+      [
+        0.982218,
+        0.998932
+      ],
+      [
+        0.980126,
+        1.075855
+      ],
+      [
+        0.027197,
+        1.075855
+      ],
+      [
+        0.025105,
+        1.0
+      ],
+      [
+        0.025105,
+        1.076923
+      ],
+      [
+        0.982218,
+        1.076923
+      ]
+    ]
+  }
+}

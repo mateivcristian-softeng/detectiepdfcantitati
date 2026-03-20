@@ -1,0 +1,97 @@
+{
+  "sample_id": "usa_fereastra_alaturate_raw_arion_simion_colorized_fatada_fata",
+  "image_size": {
+    "width": 1764,
+    "height": 651
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        77,
+        124,
+        2227,
+        643
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        1962,
+        392,
+        161,
+        133
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        1475,
+        403,
+        181,
+        134
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        833,
+        541,
+        182,
+        128
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        439,
+        543,
+        82,
+        128
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        642,
+        543,
+        44,
+        126
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        172,
+        544,
+        179,
+        130
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [
+    {
+      "bbox": [
+        1160,
+        552,
+        125,
+        212
+      ],
+      "type": "door"
+    }
+  ],
+  "socles": [
+    {
+      "bbox": [
+        78,
+        640,
+        2236,
+        222
+      ],
+      "type": "socle"
+    }
+  ]
+}

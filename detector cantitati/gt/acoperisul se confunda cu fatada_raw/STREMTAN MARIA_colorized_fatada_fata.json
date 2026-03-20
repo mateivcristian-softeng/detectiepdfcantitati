@@ -1,0 +1,97 @@
+{
+  "sample_id": "acoperisul_se_confunda_cu_fatada_raw_stremtan_maria_colorized_fatada_fata",
+  "image_size": {
+    "width": 1804,
+    "height": 502
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        517,
+        249,
+        2236,
+        239
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        2113,
+        314,
+        102,
+        87
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        1632,
+        315,
+        110,
+        85
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        2396,
+        315,
+        143,
+        85
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        1212,
+        355,
+        110,
+        85
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        830,
+        363,
+        86,
+        92
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [
+    {
+      "bbox": [
+        1967,
+        332,
+        100,
+        143
+      ],
+      "type": "door"
+    },
+    {
+      "bbox": [
+        954,
+        361,
+        79,
+        126
+      ],
+      "type": "door"
+    }
+  ],
+  "socles": [
+    {
+      "bbox": [
+        517,
+        481,
+        2236,
+        45
+      ],
+      "type": "socle"
+    }
+  ]
+}

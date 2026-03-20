@@ -1,0 +1,42 @@
+{
+  "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_popa_marinela_colorized_fatada_stanga",
+  "image_size": {
+    "width": 1284,
+    "height": 1100
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        82,
+        338,
+        541,
+        303
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        319,
+        439,
+        136,
+        95
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        86,
+        642,
+        537,
+        46
+      ],
+      "type": "socle"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_muntean_lucretia_colorized_fatada_stanga",
+  "image_size": {
+    "width": 1553,
+    "height": 1178
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        65,
+        98,
+        558,
+        403
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        215,
+        316,
+        133,
+        104
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        65,
+        499,
+        560,
+        39
+      ],
+      "type": "socle"
+    }
+  ]
+}

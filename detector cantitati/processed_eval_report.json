@@ -1,0 +1,4290 @@
+{
+  "dataset_root": "detector cantitati",
+  "iou_threshold": 0.35,
+  "aggregate": {
+    "facades": {
+      "gt": 20,
+      "pred": 21,
+      "matched": 15,
+      "precision": 0.714,
+      "recall": 0.75
+    },
+    "windows": {
+      "gt": 52,
+      "pred": 41,
+      "matched": 11,
+      "precision": 0.268,
+      "recall": 0.212
+    },
+    "doors": {
+      "gt": 11,
+      "pred": 13,
+      "matched": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  },
+  "samples": [
+    {
+      "processed": "procesate\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_dreapta_procesat.png",
+      "raw": "raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_dreapta.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            81,
+            51,
+            519,
+            559
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            94,
+            609,
+            497,
+            44
+          ]
+        ],
+        "image_size": [
+          1355,
+          1154
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            149,
+            85,
+            956,
+            936
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            173,
+            1020,
+            916,
+            74
+          ]
+        ],
+        "image_size": [
+          1355,
+          1154
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            383,
+            166,
+            303,
+            306
+          ]
+        ],
+        "windows": [
+          [
+            389,
+            393,
+            59,
+            57
+          ]
+        ],
+        "doors": [
+          [
+            386,
+            368,
+            142,
+            209
+          ]
+        ],
+        "socles": [
+          [
+            387,
+            439,
+            295,
+            138
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          735,
+          689
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              81,
+              51,
+              519,
+              559
+            ]
+          ],
+          "extra_pred": [
+            [
+              383,
+              166,
+              303,
+              306
+            ]
+          ]
+        },
+        "windows": {
+          "gt": 0,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              389,
+              393,
+              59,
+              57
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              386,
+              368,
+              142,
+              209
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_fata.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            89,
+            296,
+            1228,
+            263
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            89,
+            560,
+            1227,
+            42
+          ]
+        ],
+        "image_size": [
+          2297,
+          1103
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            149,
+            508,
+            2048,
+            452
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            149,
+            960,
+            2047,
+            72
+          ]
+        ],
+        "image_size": [
+          2297,
+          1103
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            10,
+            73,
+            1367,
+            518
+          ]
+        ],
+        "windows": [
+          [
+            114,
+            56,
+            81,
+            123
+          ]
+        ],
+        "doors": [],
+        "socles": [],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1377,
+          643
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.456
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 0,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              114,
+              56,
+              81,
+              123
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_stanga_procesat.png",
+      "raw": "raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_stanga.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            137,
+            174,
+            487,
+            470
+          ]
+        ],
+        "windows": [
+          [
+            191,
+            407,
+            63,
+            117
+          ],
+          [
+            367,
+            408,
+            138,
+            117
+          ],
+          [
+            200,
+            541,
+            17,
+            19
+          ],
+          [
+            382,
+            555,
+            18,
+            19
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            136,
+            643,
+            399,
+            34
+          ]
+        ],
+        "image_size": [
+          1423,
+          1179
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            266,
+            285,
+            948,
+            769
+          ]
+        ],
+        "windows": [
+          [
+            372,
+            665,
+            122,
+            191
+          ],
+          [
+            714,
+            667,
+            268,
+            192
+          ],
+          [
+            390,
+            885,
+            34,
+            31
+          ],
+          [
+            744,
+            907,
+            35,
+            31
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            265,
+            1052,
+            776,
+            55
+          ]
+        ],
+        "image_size": [
+          1423,
+          1179
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            64,
+            346,
+            625,
+            357
+          ]
+        ],
+        "windows": [
+          [
+            116,
+            269,
+            48,
+            92
+          ],
+          [
+            108,
+            397,
+            104,
+            152
+          ],
+          [
+            473,
+            427,
+            54,
+            118
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            57,
+            683,
+            636,
+            25
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          731,
+          721
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.473
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 4,
+          "pred": 3,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              191,
+              407,
+              63,
+              117
+            ],
+            [
+              367,
+              408,
+              138,
+              117
+            ],
+            [
+              200,
+              541,
+              17,
+              19
+            ],
+            [
+              382,
+              555,
+              18,
+              19
+            ]
+          ],
+          "extra_pred": [
+            [
+              116,
+              269,
+              48,
+              92
+            ],
+            [
+              108,
+              397,
+              104,
+              152
+            ],
+            [
+              473,
+              427,
+              54,
+              118
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MUNTEAN LUCRETIA_colorized_fatada_stanga_procesat.png",
+      "raw": "raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MUNTEAN LUCRETIA_colorized_fatada_stanga.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            65,
+            98,
+            558,
+            403
+          ]
+        ],
+        "windows": [
+          [
+            215,
+            316,
+            133,
+            104
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            65,
+            499,
+            560,
+            39
+          ]
+        ],
+        "image_size": [
+          1553,
+          1178
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            143,
+            201,
+            1229,
+            830
+          ]
+        ],
+        "windows": [
+          [
+            473,
+            650,
+            292,
+            214
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            143,
+            1027,
+            1234,
+            80
+          ]
+        ],
+        "image_size": [
+          1553,
+          1178
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            41,
+            246,
+            636,
+            272
+          ]
+        ],
+        "windows": [
+          [
+            537,
+            306,
+            81,
+            105
+          ],
+          [
+            207,
+            318,
+            153,
+            112
+          ]
+        ],
+        "doors": [
+          [
+            410,
+            326,
+            111,
+            226
+          ]
+        ],
+        "socles": [
+          [
+            32,
+            501,
+            649,
+            51
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          705,
+          572
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.557
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 1,
+          "pred": 2,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 1,
+              "iou": 0.78
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              537,
+              306,
+              81,
+              105
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              410,
+              326,
+              111,
+              226
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\2 imagini pe fundal alb 2 imagini pe fundal negru\\POPA MARINELA_colorized_fatada_stanga_procesat.png",
+      "raw": "raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\POPA MARINELA_colorized_fatada_stanga.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            82,
+            338,
+            541,
+            303
+          ]
+        ],
+        "windows": [
+          [
+            319,
+            439,
+            136,
+            95
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            86,
+            642,
+            537,
+            46
+          ]
+        ],
+        "image_size": [
+          1284,
+          1100
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            132,
+            499,
+            874,
+            447
+          ]
+        ],
+        "windows": [
+          [
+            516,
+            647,
+            219,
+            140
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            139,
+            946,
+            867,
+            68
+          ]
+        ],
+        "image_size": [
+          1284,
+          1100
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            0,
+            435,
+            461,
+            232
+          ]
+        ],
+        "windows": [],
+        "doors": [
+          [
+            69,
+            494,
+            97,
+            156
+          ]
+        ],
+        "socles": [
+          [
+            0,
+            632,
+            457,
+            74
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          795,
+          746
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.405
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 1,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              319,
+              439,
+              136,
+              95
+            ]
+          ],
+          "extra_pred": []
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              69,
+              494,
+              97,
+              156
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\BACI CATALINA_colorized_fatada_spate_procesat.png",
+      "raw": "raw\\acoperisul se confunda cu fatada_raw\\BACI CATALINA_colorized_fatada_spate.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            120,
+            301,
+            1586,
+            296
+          ]
+        ],
+        "windows": [
+          [
+            1414,
+            314,
+            67,
+            47
+          ],
+          [
+            1536,
+            361,
+            26,
+            23
+          ],
+          [
+            812,
+            415,
+            49,
+            67
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            318,
+            442,
+            1387,
+            189
+          ],
+          [
+            128,
+            597,
+            173,
+            44
+          ]
+        ],
+        "image_size": [
+          2264,
+          905
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            150,
+            389,
+            1988,
+            382
+          ]
+        ],
+        "windows": [
+          [
+            1772,
+            406,
+            84,
+            61
+          ],
+          [
+            1925,
+            466,
+            33,
+            30
+          ],
+          [
+            1018,
+            536,
+            62,
+            87
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            399,
+            570,
+            1739,
+            244
+          ],
+          [
+            161,
+            771,
+            217,
+            57
+          ]
+        ],
+        "image_size": [
+          2264,
+          905
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            67,
+            225,
+            1621,
+            321
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            67,
+            456,
+            614,
+            149
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1806,
+          701
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.634
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 3,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              1414,
+              314,
+              67,
+              47
+            ],
+            [
+              1536,
+              361,
+              26,
+              23
+            ],
+            [
+              812,
+              415,
+              49,
+              67
+            ]
+          ],
+          "extra_pred": []
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\HATEGAN ELENA_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\acoperisul se confunda cu fatada_raw\\HATEGAN ELENA_colorized_fatada_fata.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            171,
+            586,
+            340,
+            45
+          ]
+        ],
+        "image_size": [
+          1205,
+          816
+        ]
+      },
+      "gt_original": {
+        "facades": [],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            248,
+            711,
+            494,
+            55
+          ]
+        ],
+        "image_size": [
+          1205,
+          816
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            25,
+            454,
+            613,
+            150
+          ]
+        ],
+        "windows": [
+          [
+            365,
+            453,
+            67,
+            64
+          ],
+          [
+            251,
+            474,
+            40,
+            35
+          ],
+          [
+            513,
+            474,
+            40,
+            35
+          ]
+        ],
+        "doors": [
+          [
+            484,
+            442,
+            133,
+            198
+          ],
+          [
+            362,
+            466,
+            80,
+            114
+          ]
+        ],
+        "socles": [
+          [
+            25,
+            556,
+            618,
+            84
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          830,
+          672
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 0,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              25,
+              454,
+              613,
+              150
+            ]
+          ]
+        },
+        "windows": {
+          "gt": 0,
+          "pred": 3,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              365,
+              453,
+              67,
+              64
+            ],
+            [
+              251,
+              474,
+              40,
+              35
+            ],
+            [
+              513,
+              474,
+              40,
+              35
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 2,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              484,
+              442,
+              133,
+              198
+            ],
+            [
+              362,
+              466,
+              80,
+              114
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\HATEGAN ELENA_colorized_fatada_spate_raw.png",
+      "raw": "raw\\acoperisul se confunda cu fatada_raw\\HATEGAN ELENA_colorized_fatada_spate.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            88,
+            315,
+            1604,
+            282
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            88,
+            518,
+            1606,
+            99
+          ]
+        ],
+        "image_size": [
+          2297,
+          839
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            112,
+            391,
+            2047,
+            350
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            112,
+            644,
+            2049,
+            123
+          ]
+        ],
+        "image_size": [
+          2297,
+          839
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            4,
+            206,
+            1772,
+            358
+          ]
+        ],
+        "windows": [
+          [
+            1215,
+            0,
+            460,
+            267
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            4,
+            449,
+            864,
+            220
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1800,
+          675
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.581
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 0,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": [
+            [
+              1215,
+              0,
+              460,
+              267
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\MUNTEAN LUCRETIA_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\acoperisul se confunda cu fatada_raw\\MUNTEAN LUCRETIA_colorized_fatada_fata.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            17,
+            10,
+            1370,
+            516
+          ]
+        ],
+        "windows": [
+          [
+            275,
+            308,
+            21,
+            19
+          ],
+          [
+            741,
+            343,
+            22,
+            19
+          ],
+          [
+            292,
+            344,
+            23,
+            19
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            1218,
+            467,
+            124,
+            55
+          ],
+          [
+            64,
+            468,
+            1098,
+            51
+          ],
+          [
+            1165,
+            492,
+            64,
+            19
+          ]
+        ],
+        "image_size": [
+          2266,
+          928
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            27,
+            16,
+            2194,
+            862
+          ]
+        ],
+        "windows": [
+          [
+            441,
+            515,
+            34,
+            31
+          ],
+          [
+            1186,
+            573,
+            36,
+            31
+          ],
+          [
+            468,
+            576,
+            37,
+            31
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            1951,
+            781,
+            198,
+            92
+          ],
+          [
+            103,
+            782,
+            1759,
+            85
+          ],
+          [
+            1866,
+            823,
+            102,
+            31
+          ]
+        ],
+        "image_size": [
+          2266,
+          928
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            47,
+            287,
+            1335,
+            189
+          ]
+        ],
+        "windows": [
+          [
+            247,
+            290,
+            118,
+            119
+          ],
+          [
+            981,
+            292,
+            216,
+            127
+          ],
+          [
+            641,
+            293,
+            214,
+            124
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            47,
+            472,
+            1339,
+            18
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1415,
+          555
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.357
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 3,
+          "pred": 3,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              275,
+              308,
+              21,
+              19
+            ],
+            [
+              741,
+              343,
+              22,
+              19
+            ],
+            [
+              292,
+              344,
+              23,
+              19
+            ]
+          ],
+          "extra_pred": [
+            [
+              247,
+              290,
+              118,
+              119
+            ],
+            [
+              981,
+              292,
+              216,
+              127
+            ],
+            [
+              641,
+              293,
+              214,
+              124
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\MUNTEAN LUCRETIA_colorized_fatada_spate_procesat.png",
+      "raw": "raw\\acoperisul se confunda cu fatada_raw\\MUNTEAN LUCRETIA_colorized_fatada_spate.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            56,
+            215,
+            1279,
+            207
+          ]
+        ],
+        "windows": [
+          [
+            316,
+            258,
+            54,
+            45
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            56,
+            421,
+            145,
+            62
+          ],
+          [
+            280,
+            421,
+            1055,
+            58
+          ]
+        ],
+        "image_size": [
+          2258,
+          904
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            88,
+            373,
+            2026,
+            360
+          ]
+        ],
+        "windows": [
+          [
+            500,
+            448,
+            86,
+            79
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            88,
+            732,
+            229,
+            108
+          ],
+          [
+            443,
+            732,
+            1671,
+            101
+          ]
+        ],
+        "image_size": [
+          2258,
+          904
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            537,
+            270,
+            837,
+            196
+          ]
+        ],
+        "windows": [
+          [
+            1127,
+            279,
+            66,
+            44
+          ],
+          [
+            856,
+            324,
+            67,
+            34
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            511,
+            453,
+            863,
+            45
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1425,
+          520
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.394
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 1,
+          "pred": 2,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              316,
+              258,
+              54,
+              45
+            ]
+          ],
+          "extra_pred": [
+            [
+              1127,
+              279,
+              66,
+              44
+            ],
+            [
+              856,
+              324,
+              67,
+              34
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\POPA MARINELA 2_COLORIZED_fatada_fata_procesat.png",
+      "raw": "raw\\Situatii complexe_raw\\POPA MARINELA 2_COLORIZED_fatada_fata.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            107,
+            236,
+            813,
+            348
+          ]
+        ],
+        "windows": [
+          [
+            269,
+            407,
+            74,
+            90
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            107,
+            584,
+            813,
+            48
+          ]
+        ],
+        "image_size": [
+          1423,
+          988
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            148,
+            326,
+            1128,
+            481
+          ]
+        ],
+        "windows": [
+          [
+            373,
+            562,
+            103,
+            124
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            148,
+            807,
+            1128,
+            66
+          ]
+        ],
+        "image_size": [
+          1423,
+          988
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            45,
+            202,
+            258,
+            312
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            45,
+            514,
+            258,
+            115
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1026,
+          715
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              107,
+              236,
+              813,
+              348
+            ]
+          ],
+          "extra_pred": [
+            [
+              45,
+              202,
+              258,
+              312
+            ]
+          ]
+        },
+        "windows": {
+          "gt": 1,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              269,
+              407,
+              74,
+              90
+            ]
+          ],
+          "extra_pred": []
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\POPA MARINELA_colorized_fatada_dreapta_procesat.png",
+      "raw": "raw\\acoperisul se confunda cu fatada_raw\\POPA MARINELA_colorized_fatada_dreapta.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            120,
+            337,
+            832,
+            341
+          ]
+        ],
+        "windows": [
+          [
+            667,
+            494,
+            142,
+            97
+          ],
+          [
+            271,
+            497,
+            141,
+            100
+          ],
+          [
+            338,
+            552,
+            24,
+            21
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            125,
+            677,
+            830,
+            59
+          ]
+        ],
+        "image_size": [
+          1426,
+          1078
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            166,
+            459,
+            1147,
+            464
+          ]
+        ],
+        "windows": [
+          [
+            919,
+            673,
+            195,
+            132
+          ],
+          [
+            374,
+            676,
+            194,
+            136
+          ],
+          [
+            466,
+            752,
+            33,
+            29
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            172,
+            921,
+            1143,
+            80
+          ]
+        ],
+        "image_size": [
+          1426,
+          1078
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            63,
+            382,
+            930,
+            322
+          ]
+        ],
+        "windows": [
+          [
+            642,
+            500,
+            188,
+            124
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            72,
+            685,
+            921,
+            56
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1035,
+          792
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.731
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 3,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.535
+            }
+          ],
+          "missed_gt": [
+            [
+              271,
+              497,
+              141,
+              100
+            ],
+            [
+              338,
+              552,
+              24,
+              21
+            ]
+          ],
+          "extra_pred": []
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\STETCU CALINA_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\acoperisul se confunda cu fatada_raw\\STETCU CALINA_colorized_fatada_fata.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            47,
+            254,
+            988,
+            214
+          ]
+        ],
+        "windows": [
+          [
+            570,
+            279,
+            87,
+            107
+          ],
+          [
+            821,
+            281,
+            88,
+            102
+          ],
+          [
+            222,
+            282,
+            109,
+            109
+          ],
+          [
+            243,
+            307,
+            20,
+            18
+          ],
+          [
+            604,
+            339,
+            22,
+            18
+          ]
+        ],
+        "doors": [
+          [
+            677,
+            291,
+            88,
+            166
+          ]
+        ],
+        "socles": [
+          [
+            48,
+            467,
+            338,
+            70
+          ],
+          [
+            396,
+            467,
+            267,
+            55
+          ],
+          [
+            804,
+            467,
+            227,
+            33
+          ]
+        ],
+        "image_size": [
+          1997,
+          1040
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            79,
+            444,
+            1653,
+            374
+          ]
+        ],
+        "windows": [
+          [
+            953,
+            488,
+            146,
+            187
+          ],
+          [
+            1373,
+            492,
+            147,
+            178
+          ],
+          [
+            372,
+            493,
+            182,
+            190
+          ],
+          [
+            407,
+            538,
+            34,
+            31
+          ],
+          [
+            1010,
+            594,
+            36,
+            31
+          ]
+        ],
+        "doors": [
+          [
+            1133,
+            510,
+            147,
+            291
+          ]
+        ],
+        "socles": [
+          [
+            80,
+            817,
+            565,
+            123
+          ],
+          [
+            662,
+            818,
+            446,
+            97
+          ],
+          [
+            1345,
+            818,
+            379,
+            58
+          ]
+        ],
+        "image_size": [
+          1997,
+          1040
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            23,
+            280,
+            1075,
+            217
+          ]
+        ],
+        "windows": [
+          [
+            196,
+            288,
+            152,
+            136
+          ],
+          [
+            867,
+            289,
+            64,
+            59
+          ]
+        ],
+        "doors": [
+          [
+            583,
+            285,
+            156,
+            167
+          ],
+          [
+            714,
+            313,
+            91,
+            133
+          ]
+        ],
+        "socles": [
+          [
+            12,
+            483,
+            1086,
+            53
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1194,
+          594
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.717
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 5,
+          "pred": 2,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 2,
+              "pred_index": 0,
+              "iou": 0.526
+            }
+          ],
+          "missed_gt": [
+            [
+              570,
+              279,
+              87,
+              107
+            ],
+            [
+              821,
+              281,
+              88,
+              102
+            ],
+            [
+              243,
+              307,
+              20,
+              18
+            ],
+            [
+              604,
+              339,
+              22,
+              18
+            ]
+          ],
+          "extra_pred": [
+            [
+              867,
+              289,
+              64,
+              59
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 1,
+          "pred": 2,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              677,
+              291,
+              88,
+              166
+            ]
+          ],
+          "extra_pred": [
+            [
+              583,
+              285,
+              156,
+              167
+            ],
+            [
+              714,
+              313,
+              91,
+              133
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\acoperișul se confundă cu fațada\\STREMTAN MARIA_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\usa + fereastra alaturate_raw\\STREMTAN MARIA_colorized_fatada_fata.png",
+      "pgw_px_per_m": 100.4724409448819,
+      "gt": {
+        "facades": [
+          [
+            517,
+            249,
+            2236,
+            239
+          ]
+        ],
+        "windows": [
+          [
+            2113,
+            314,
+            102,
+            87
+          ],
+          [
+            1632,
+            315,
+            110,
+            85
+          ],
+          [
+            2396,
+            315,
+            143,
+            85
+          ],
+          [
+            1212,
+            355,
+            110,
+            85
+          ],
+          [
+            830,
+            363,
+            86,
+            92
+          ]
+        ],
+        "doors": [
+          [
+            1967,
+            332,
+            100,
+            143
+          ],
+          [
+            954,
+            361,
+            79,
+            126
+          ]
+        ],
+        "socles": [
+          [
+            517,
+            481,
+            2236,
+            45
+          ]
+        ],
+        "image_size": [
+          1804,
+          502
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            319,
+            206,
+            1380,
+            197
+          ]
+        ],
+        "windows": [
+          [
+            1304,
+            259,
+            63,
+            72
+          ],
+          [
+            1007,
+            260,
+            68,
+            70
+          ],
+          [
+            1479,
+            260,
+            88,
+            70
+          ],
+          [
+            748,
+            293,
+            68,
+            70
+          ],
+          [
+            512,
+            300,
+            53,
+            76
+          ]
+        ],
+        "doors": [
+          [
+            1214,
+            274,
+            62,
+            118
+          ],
+          [
+            589,
+            298,
+            49,
+            104
+          ]
+        ],
+        "socles": [
+          [
+            319,
+            397,
+            1380,
+            37
+          ]
+        ],
+        "image_size": [
+          1804,
+          502
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            43,
+            354,
+            1943,
+            182
+          ]
+        ],
+        "windows": [
+          [
+            2430,
+            312,
+            70,
+            106
+          ],
+          [
+            2511,
+            313,
+            62,
+            111
+          ],
+          [
+            1638,
+            324,
+            91,
+            94
+          ],
+          [
+            1200,
+            354,
+            118,
+            134
+          ]
+        ],
+        "doors": [
+          [
+            2006,
+            399,
+            101,
+            147
+          ]
+        ],
+        "socles": [
+          [
+            313,
+            526,
+            2517,
+            36
+          ]
+        ],
+        "pgw_px_per_m": 100.4724409448819,
+        "image_size": [
+          2923,
+          608
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              517,
+              249,
+              2236,
+              239
+            ]
+          ],
+          "extra_pred": [
+            [
+              43,
+              354,
+              1943,
+              182
+            ]
+          ]
+        },
+        "windows": {
+          "gt": 5,
+          "pred": 4,
+          "matched": 3,
+          "matches": [
+            {
+              "gt_index": 1,
+              "pred_index": 2,
+              "iou": 0.629
+            },
+            {
+              "gt_index": 3,
+              "pred_index": 3,
+              "iou": 0.558
+            },
+            {
+              "gt_index": 2,
+              "pred_index": 0,
+              "iou": 0.437
+            }
+          ],
+          "missed_gt": [
+            [
+              2113,
+              314,
+              102,
+              87
+            ],
+            [
+              830,
+              363,
+              86,
+              92
+            ]
+          ],
+          "extra_pred": [
+            [
+              2511,
+              313,
+              62,
+              111
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 2,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              1967,
+              332,
+              100,
+              143
+            ],
+            [
+              954,
+              361,
+              79,
+              126
+            ]
+          ],
+          "extra_pred": [
+            [
+              2006,
+              399,
+              101,
+              147
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\situatii complexe\\POPA MARINELA 2_COLORIZED_fatada_fata_procesat.png",
+      "raw": "raw\\Situatii complexe_raw\\POPA MARINELA 2_COLORIZED_fatada_fata.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            169,
+            42,
+            733,
+            547
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [],
+        "image_size": [
+          1125,
+          1083
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            185,
+            63,
+            804,
+            828
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [],
+        "image_size": [
+          1125,
+          1083
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            45,
+            202,
+            258,
+            312
+          ]
+        ],
+        "windows": [],
+        "doors": [],
+        "socles": [
+          [
+            45,
+            514,
+            258,
+            115
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1026,
+          715
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              169,
+              42,
+              733,
+              547
+            ]
+          ],
+          "extra_pred": [
+            [
+              45,
+              202,
+              258,
+              312
+            ]
+          ]
+        },
+        "windows": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\situatii complexe\\POPA MARINELA_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\Situatii complexe_raw\\POPA MARINELA_colorized_fatada_fata.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            74,
+            319,
+            1593,
+            294
+          ]
+        ],
+        "windows": [
+          [
+            1070,
+            399,
+            46,
+            64
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            81,
+            612,
+            221,
+            87
+          ],
+          [
+            398,
+            612,
+            1269,
+            81
+          ]
+        ],
+        "image_size": [
+          2279,
+          1090
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            96,
+            470,
+            2057,
+            433
+          ]
+        ],
+        "windows": [
+          [
+            1382,
+            589,
+            59,
+            94
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            105,
+            903,
+            285,
+            128
+          ],
+          [
+            514,
+            903,
+            1639,
+            120
+          ]
+        ],
+        "image_size": [
+          2279,
+          1090
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            478,
+            314,
+            1168,
+            347
+          ]
+        ],
+        "windows": [
+          [
+            327,
+            379,
+            75,
+            66
+          ]
+        ],
+        "doors": [],
+        "socles": [
+          [
+            478,
+            626,
+            1168,
+            80
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1765,
+          739
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.648
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              1070,
+              399,
+              46,
+              64
+            ]
+          ],
+          "extra_pred": [
+            [
+              327,
+              379,
+              75,
+              66
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 0,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\situatii complexe\\POPA MARINELA_colorized_fatada_spate_procesat.png",
+      "raw": "raw\\Situatii complexe_raw\\POPA MARINELA_colorized_fatada_spate.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            76,
+            288,
+            1521,
+            364
+          ]
+        ],
+        "windows": [
+          [
+            870,
+            453,
+            153,
+            100
+          ]
+        ],
+        "doors": [
+          [
+            570,
+            459,
+            113,
+            183
+          ],
+          [
+            1228,
+            465,
+            91,
+            184
+          ]
+        ],
+        "socles": [
+          [
+            78,
+            634,
+            450,
+            59
+          ],
+          [
+            747,
+            643,
+            84,
+            50
+          ],
+          [
+            832,
+            643,
+            369,
+            55
+          ],
+          [
+            1331,
+            643,
+            80,
+            48
+          ]
+        ],
+        "image_size": [
+          2312,
+          1159
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            103,
+            414,
+            2064,
+            523
+          ]
+        ],
+        "windows": [
+          [
+            1180,
+            652,
+            208,
+            144
+          ]
+        ],
+        "doors": [
+          [
+            773,
+            660,
+            153,
+            263
+          ],
+          [
+            1666,
+            669,
+            124,
+            264
+          ]
+        ],
+        "socles": [
+          [
+            106,
+            912,
+            611,
+            85
+          ],
+          [
+            1014,
+            925,
+            114,
+            72
+          ],
+          [
+            1129,
+            925,
+            500,
+            79
+          ],
+          [
+            1806,
+            925,
+            108,
+            69
+          ]
+        ],
+        "image_size": [
+          2312,
+          1159
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            87,
+            491,
+            1383,
+            196
+          ]
+        ],
+        "windows": [
+          [
+            885,
+            506,
+            200,
+            143
+          ]
+        ],
+        "doors": [
+          [
+            469,
+            498,
+            87,
+            171
+          ],
+          [
+            1276,
+            581,
+            91,
+            136
+          ]
+        ],
+        "socles": [
+          [
+            63,
+            686,
+            1430,
+            28
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          1704,
+          806
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.37
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              870,
+              453,
+              153,
+              100
+            ]
+          ],
+          "extra_pred": [
+            [
+              885,
+              506,
+              200,
+              143
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 2,
+          "pred": 2,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              570,
+              459,
+              113,
+              183
+            ],
+            [
+              1228,
+              465,
+              91,
+              184
+            ]
+          ],
+          "extra_pred": [
+            [
+              469,
+              498,
+              87,
+              171
+            ],
+            [
+              1276,
+              581,
+              91,
+              136
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\situatii complexe\\STETCU CALINA_colorized_fatada_dreapta_procesat.png",
+      "raw": "raw\\Situatii complexe_raw\\STETCU CALINA_colorized_fatada_dreapta.png",
+      "pgw_px_per_m": null,
+      "gt": {
+        "facades": [
+          [
+            68,
+            35,
+            491,
+            513
+          ]
+        ],
+        "windows": [
+          [
+            198,
+            345,
+            78,
+            112
+          ],
+          [
+            143,
+            415,
+            21,
+            19
+          ],
+          [
+            370,
+            441,
+            83,
+            28
+          ],
+          [
+            476,
+            487,
+            13,
+            18
+          ]
+        ],
+        "doors": [
+          [
+            204,
+            158,
+            100,
+            139
+          ],
+          [
+            404,
+            311,
+            50,
+            75
+          ]
+        ],
+        "socles": [
+          [
+            92,
+            543,
+            458,
+            36
+          ]
+        ],
+        "image_size": [
+          1212,
+          1139
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            128,
+            62,
+            922,
+            903
+          ]
+        ],
+        "windows": [
+          [
+            372,
+            607,
+            146,
+            198
+          ],
+          [
+            269,
+            730,
+            39,
+            33
+          ],
+          [
+            694,
+            777,
+            155,
+            49
+          ],
+          [
+            893,
+            857,
+            24,
+            32
+          ]
+        ],
+        "doors": [
+          [
+            382,
+            278,
+            188,
+            245
+          ],
+          [
+            758,
+            548,
+            94,
+            132
+          ]
+        ],
+        "socles": [
+          [
+            172,
+            956,
+            860,
+            64
+          ]
+        ],
+        "image_size": [
+          1212,
+          1139
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            67,
+            325,
+            536,
+            220
+          ]
+        ],
+        "windows": [
+          [
+            377,
+            310,
+            107,
+            97
+          ],
+          [
+            41,
+            342,
+            30,
+            54
+          ],
+          [
+            96,
+            355,
+            46,
+            49
+          ]
+        ],
+        "doors": [
+          [
+            193,
+            359,
+            75,
+            120
+          ]
+        ],
+        "socles": [
+          [
+            62,
+            541,
+            547,
+            53
+          ]
+        ],
+        "pgw_px_per_m": null,
+        "image_size": [
+          646,
+          647
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.413
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 4,
+          "pred": 3,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              198,
+              345,
+              78,
+              112
+            ],
+            [
+              143,
+              415,
+              21,
+              19
+            ],
+            [
+              370,
+              441,
+              83,
+              28
+            ],
+            [
+              476,
+              487,
+              13,
+              18
+            ]
+          ],
+          "extra_pred": [
+            [
+              377,
+              310,
+              107,
+              97
+            ],
+            [
+              41,
+              342,
+              30,
+              54
+            ],
+            [
+              96,
+              355,
+              46,
+              49
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 2,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              204,
+              158,
+              100,
+              139
+            ],
+            [
+              404,
+              311,
+              50,
+              75
+            ]
+          ],
+          "extra_pred": [
+            [
+              193,
+              359,
+              75,
+              120
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\ușă + ferestre alăturate\\ARION SIMION_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\usa + fereastra alaturate_raw\\ARION SIMION_colorized_fatada_fata.png",
+      "pgw_px_per_m": 100.4724409448819,
+      "gt": {
+        "facades": [
+          [
+            77,
+            124,
+            2227,
+            643
+          ]
+        ],
+        "windows": [
+          [
+            1962,
+            392,
+            161,
+            133
+          ],
+          [
+            1475,
+            403,
+            181,
+            134
+          ],
+          [
+            833,
+            541,
+            182,
+            128
+          ],
+          [
+            439,
+            543,
+            82,
+            128
+          ],
+          [
+            642,
+            543,
+            44,
+            126
+          ],
+          [
+            172,
+            544,
+            179,
+            130
+          ]
+        ],
+        "doors": [
+          [
+            1160,
+            552,
+            125,
+            212
+          ]
+        ],
+        "socles": [
+          [
+            78,
+            640,
+            2236,
+            222
+          ]
+        ],
+        "image_size": [
+          1764,
+          651
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            56,
+            89,
+            1627,
+            461
+          ]
+        ],
+        "windows": [
+          [
+            1434,
+            281,
+            118,
+            95
+          ],
+          [
+            1078,
+            289,
+            132,
+            96
+          ],
+          [
+            609,
+            388,
+            133,
+            92
+          ],
+          [
+            321,
+            389,
+            60,
+            92
+          ],
+          [
+            469,
+            389,
+            32,
+            90
+          ],
+          [
+            126,
+            390,
+            131,
+            93
+          ]
+        ],
+        "doors": [
+          [
+            848,
+            396,
+            91,
+            152
+          ]
+        ],
+        "socles": [
+          [
+            57,
+            459,
+            1634,
+            159
+          ]
+        ],
+        "image_size": [
+          1764,
+          651
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            139,
+            481,
+            2218,
+            351
+          ]
+        ],
+        "windows": [
+          [
+            2001,
+            432,
+            179,
+            137
+          ],
+          [
+            1502,
+            471,
+            229,
+            125
+          ],
+          [
+            776,
+            510,
+            166,
+            192
+          ],
+          [
+            339,
+            583,
+            160,
+            195
+          ]
+        ],
+        "doors": [
+          [
+            1262,
+            544,
+            122,
+            200
+          ]
+        ],
+        "socles": [
+          [
+            135,
+            746,
+            892,
+            154
+          ]
+        ],
+        "pgw_px_per_m": 100.4724409448819,
+        "image_size": [
+          2414,
+          908
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.389
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 6,
+          "pred": 4,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              1962,
+              392,
+              161,
+              133
+            ],
+            [
+              1475,
+              403,
+              181,
+              134
+            ],
+            [
+              833,
+              541,
+              182,
+              128
+            ],
+            [
+              439,
+              543,
+              82,
+              128
+            ],
+            [
+              642,
+              543,
+              44,
+              126
+            ],
+            [
+              172,
+              544,
+              179,
+              130
+            ]
+          ],
+          "extra_pred": [
+            [
+              2001,
+              432,
+              179,
+              137
+            ],
+            [
+              1502,
+              471,
+              229,
+              125
+            ],
+            [
+              776,
+              510,
+              166,
+              192
+            ],
+            [
+              339,
+              583,
+              160,
+              195
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              1160,
+              552,
+              125,
+              212
+            ]
+          ],
+          "extra_pred": [
+            [
+              1262,
+              544,
+              122,
+              200
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "processed": "procesate\\ușă + ferestre alăturate\\SOAITA FLORIN_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\usa + fereastra alaturate_raw\\SOAITA FLORIN_colorized_fatada_fata.png",
+      "pgw_px_per_m": 100.4724409448819,
+      "gt": {
+        "facades": [
+          [
+            8,
+            38,
+            1432,
+            429
+          ]
+        ],
+        "windows": [
+          [
+            885,
+            175,
+            182,
+            114
+          ],
+          [
+            1110,
+            175,
+            185,
+            117
+          ],
+          [
+            574,
+            178,
+            74,
+            108
+          ],
+          [
+            767,
+            178,
+            84,
+            109
+          ],
+          [
+            224,
+            200,
+            158,
+            92
+          ],
+          [
+            923,
+            240,
+            24,
+            16
+          ],
+          [
+            200,
+            413,
+            61,
+            37
+          ],
+          [
+            282,
+            425,
+            15,
+            17
+          ]
+        ],
+        "doors": [
+          [
+            646,
+            286,
+            123,
+            81
+          ]
+        ],
+        "socles": [
+          [
+            44,
+            371,
+            1323,
+            94
+          ]
+        ],
+        "image_size": [
+          2400,
+          1074
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            13,
+            79,
+            2384,
+            882
+          ]
+        ],
+        "windows": [
+          [
+            1473,
+            360,
+            303,
+            234
+          ],
+          [
+            1848,
+            360,
+            308,
+            241
+          ],
+          [
+            955,
+            367,
+            123,
+            223
+          ],
+          [
+            1276,
+            367,
+            140,
+            224
+          ],
+          [
+            372,
+            411,
+            263,
+            189
+          ],
+          [
+            1537,
+            494,
+            40,
+            33
+          ],
+          [
+            333,
+            850,
+            102,
+            77
+          ],
+          [
+            470,
+            875,
+            25,
+            34
+          ]
+        ],
+        "doors": [
+          [
+            1075,
+            589,
+            204,
+            166
+          ]
+        ],
+        "socles": [
+          [
+            73,
+            763,
+            2202,
+            193
+          ]
+        ],
+        "image_size": [
+          2400,
+          1074
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            0,
+            137,
+            1429,
+            299
+          ]
+        ],
+        "windows": [
+          [
+            1083,
+            160,
+            182,
+            149
+          ],
+          [
+            557,
+            164,
+            266,
+            179
+          ],
+          [
+            860,
+            171,
+            62,
+            131
+          ],
+          [
+            988,
+            173,
+            54,
+            133
+          ],
+          [
+            208,
+            195,
+            164,
+            121
+          ]
+        ],
+        "doors": [],
+        "socles": [],
+        "pgw_px_per_m": 100.4724409448819,
+        "image_size": [
+          1442,
+          522
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 1,
+          "matches": [
+            {
+              "gt_index": 0,
+              "pred_index": 0,
+              "iou": 0.689
+            }
+          ],
+          "missed_gt": [],
+          "extra_pred": []
+        },
+        "windows": {
+          "gt": 8,
+          "pred": 5,
+          "matched": 2,
+          "matches": [
+            {
+              "gt_index": 4,
+              "pred_index": 4,
+              "iou": 0.656
+            },
+            {
+              "gt_index": 1,
+              "pred_index": 0,
+              "iou": 0.592
+            }
+          ],
+          "missed_gt": [
+            [
+              885,
+              175,
+              182,
+              114
+            ],
+            [
+              574,
+              178,
+              74,
+              108
+            ],
+            [
+              767,
+              178,
+              84,
+              109
+            ],
+            [
+              923,
+              240,
+              24,
+              16
+            ],
+            [
+              200,
+              413,
+              61,
+              37
+            ],
+            [
+              282,
+              425,
+              15,
+              17
+            ]
+          ],
+          "extra_pred": [
+            [
+              557,
+              164,
+              266,
+              179
+            ],
+            [
+              860,
+              171,
+              62,
+              131
+            ],
+            [
+              988,
+              173,
+              54,
+              133
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 1,
+          "pred": 0,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              646,
+              286,
+              123,
+              81
+            ]
+          ],
+          "extra_pred": []
+        }
+      }
+    },
+    {
+      "processed": "procesate\\ușă + ferestre alăturate\\STREMTAN MARIA_colorized_fatada_fata_procesat.png",
+      "raw": "raw\\usa + fereastra alaturate_raw\\STREMTAN MARIA_colorized_fatada_fata.png",
+      "pgw_px_per_m": 100.4724409448819,
+      "gt": {
+        "facades": [
+          [
+            517,
+            249,
+            2236,
+            239
+          ]
+        ],
+        "windows": [
+          [
+            2113,
+            314,
+            102,
+            87
+          ],
+          [
+            1632,
+            315,
+            110,
+            85
+          ],
+          [
+            2396,
+            315,
+            143,
+            85
+          ],
+          [
+            1212,
+            355,
+            110,
+            85
+          ],
+          [
+            830,
+            363,
+            86,
+            92
+          ]
+        ],
+        "doors": [
+          [
+            1967,
+            332,
+            100,
+            143
+          ],
+          [
+            954,
+            361,
+            79,
+            126
+          ]
+        ],
+        "socles": [
+          [
+            517,
+            481,
+            2236,
+            45
+          ]
+        ],
+        "image_size": [
+          1804,
+          502
+        ]
+      },
+      "gt_original": {
+        "facades": [
+          [
+            319,
+            206,
+            1380,
+            197
+          ]
+        ],
+        "windows": [
+          [
+            1304,
+            259,
+            63,
+            72
+          ],
+          [
+            1007,
+            260,
+            68,
+            70
+          ],
+          [
+            1479,
+            260,
+            88,
+            70
+          ],
+          [
+            748,
+            293,
+            68,
+            70
+          ],
+          [
+            512,
+            300,
+            53,
+            76
+          ]
+        ],
+        "doors": [
+          [
+            1214,
+            274,
+            62,
+            118
+          ],
+          [
+            589,
+            298,
+            49,
+            104
+          ]
+        ],
+        "socles": [
+          [
+            319,
+            397,
+            1380,
+            37
+          ]
+        ],
+        "image_size": [
+          1804,
+          502
+        ]
+      },
+      "pred": {
+        "facades": [
+          [
+            43,
+            354,
+            1943,
+            182
+          ]
+        ],
+        "windows": [
+          [
+            2430,
+            312,
+            70,
+            106
+          ],
+          [
+            2511,
+            313,
+            62,
+            111
+          ],
+          [
+            1638,
+            324,
+            91,
+            94
+          ],
+          [
+            1200,
+            354,
+            118,
+            134
+          ]
+        ],
+        "doors": [
+          [
+            2006,
+            399,
+            101,
+            147
+          ]
+        ],
+        "socles": [
+          [
+            313,
+            526,
+            2517,
+            36
+          ]
+        ],
+        "pgw_px_per_m": 100.4724409448819,
+        "image_size": [
+          2923,
+          608
+        ]
+      },
+      "metrics": {
+        "facades": {
+          "gt": 1,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              517,
+              249,
+              2236,
+              239
+            ]
+          ],
+          "extra_pred": [
+            [
+              43,
+              354,
+              1943,
+              182
+            ]
+          ]
+        },
+        "windows": {
+          "gt": 5,
+          "pred": 4,
+          "matched": 3,
+          "matches": [
+            {
+              "gt_index": 1,
+              "pred_index": 2,
+              "iou": 0.629
+            },
+            {
+              "gt_index": 3,
+              "pred_index": 3,
+              "iou": 0.558
+            },
+            {
+              "gt_index": 2,
+              "pred_index": 0,
+              "iou": 0.437
+            }
+          ],
+          "missed_gt": [
+            [
+              2113,
+              314,
+              102,
+              87
+            ],
+            [
+              830,
+              363,
+              86,
+              92
+            ]
+          ],
+          "extra_pred": [
+            [
+              2511,
+              313,
+              62,
+              111
+            ]
+          ]
+        },
+        "doors": {
+          "gt": 2,
+          "pred": 1,
+          "matched": 0,
+          "matches": [],
+          "missed_gt": [
+            [
+              1967,
+              332,
+              100,
+              143
+            ],
+            [
+              954,
+              361,
+              79,
+              126
+            ]
+          ],
+          "extra_pred": [
+            [
+              2006,
+              399,
+              101,
+              147
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

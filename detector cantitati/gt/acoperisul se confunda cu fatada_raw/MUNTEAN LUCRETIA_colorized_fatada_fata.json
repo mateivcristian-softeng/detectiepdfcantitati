@@ -1,0 +1,78 @@
+{
+  "sample_id": "acoperisul_se_confunda_cu_fatada_raw_muntean_lucretia_colorized_fatada_fata",
+  "image_size": {
+    "width": 2266,
+    "height": 928
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        17,
+        10,
+        1370,
+        516
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        275,
+        308,
+        21,
+        19
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        741,
+        343,
+        22,
+        19
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        292,
+        344,
+        23,
+        19
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        1218,
+        467,
+        124,
+        55
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        64,
+        468,
+        1098,
+        51
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        1165,
+        492,
+        64,
+        19
+      ],
+      "type": "socle"
+    }
+  ]
+}

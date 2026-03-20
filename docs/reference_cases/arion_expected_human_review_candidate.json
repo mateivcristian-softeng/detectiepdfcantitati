@@ -1,0 +1,311 @@
+{
+  "reference_id": "arion_human_review_candidate_2026-03-16",
+  "scene": "composite_stepped_facade",
+  "source": "detector-derived from raw image, pending human review",
+  "image_size": [
+    2414,
+    908
+  ],
+  "review_status": "PENDING",
+  "elements": [
+    {
+      "id": "W1",
+      "type": "window",
+      "box": [
+        1424,
+        410,
+        266,
+        166
+      ],
+      "mean_gray": 179.7,
+      "dark_frac": 0.0269,
+      "uncertain": true,
+      "note": "Fereastra larga in zona superioara dreapta. Verificati delimitarea exacta.",
+      "human_decision": "",
+      "adjusted_box": null,
+      "comment": ""
+    },
+    {
+      "id": "W2",
+      "type": "window",
+      "box": [
+        1912,
+        475,
+        233,
+        137
+      ],
+      "mean_gray": 90.5,
+      "dark_frac": 0.4069,
+      "uncertain": false,
+      "note": "Fereastra in extrema dreapta sus.",
+      "human_decision": "",
+      "adjusted_box": null,
+      "comment": ""
+    },
+    {
+      "id": "W3",
+      "type": "window",
+      "box": [
+        776,
+        510,
+        166,
+        192
+      ],
+      "mean_gray": 137.5,
+      "dark_frac": 0.2384,
+      "uncertain": false,
+      "note": "Fereastra centrala in zona inferioara.",
+      "human_decision": "",
+      "adjusted_box": null,
+      "comment": ""
+    },
+    {
+      "id": "W4",
+      "type": "window",
+      "box": [
+        339,
+        583,
+        160,
+        137
+      ],
+      "mean_gray": 171.6,
+      "dark_frac": 0.1313,
+      "uncertain": false,
+      "note": "Fereastra in zona inferioara stanga. Verificati daca e reala sau artefact de textura.",
+      "human_decision": "",
+      "adjusted_box": null,
+      "comment": ""
+    },
+    {
+      "id": "W5",
+      "type": "window",
+      "box": [
+        589,
+        601,
+        27,
+        95
+      ],
+      "mean_gray": 207.0,
+      "dark_frac": 0.0,
+      "uncertain": true,
+      "note": "Sidelight ingust (27px). Flaguit ca bright wall de validator.",
+      "human_decision": "",
+      "adjusted_box": null,
+      "comment": ""
+    },
+    {
+      "id": "W6",
+      "type": "window",
+      "box": [
+        737,
+        601,
+        27,
+        95
+      ],
+      "mean_gray": 160.4,
+      "dark_frac": 0.0172,
+      "uncertain": true,
+      "note": "Sidelight ingust (27px). Flaguit ca bright wall de validator.",
+      "human_decision": "",
+      "adjusted_box": null,
+      "comment": ""
+    },
+    {
+      "id": "D1",
+      "type": "door",
+      "box": [
+        1262,
+        544,
+        122,
+        176
+      ],
+      "mean_gray": 109.4,
+      "dark_frac": 0.4229,
+      "uncertain": false,
+      "note": "Usa detectata direct (photo-door-local-contrast). Pozitie relativ sigura.",
+      "human_decision": "",
+      "adjusted_box": null,
+      "comment": ""
+    },
+    {
+      "id": "D2",
+      "type": "door",
+      "box": [
+        626,
+        588,
+        101,
+        132
+      ],
+      "mean_gray": 208.7,
+      "dark_frac": 0.001,
+      "uncertain": true,
+      "note": "Usa sintetizata din triplet tall_parts. Pozitie pe X derivata din gap center, nu din semnal direct.",
+      "human_decision": "",
+      "adjusted_box": null,
+      "comment": ""
+    }
+  ],
+  "facade": {
+    "bbox": [
+      135,
+      176,
+      2226,
+      544
+    ],
+    "contour": [
+      [
+        2360,
+        176
+      ],
+      [
+        1600,
+        176
+      ],
+      [
+        1665,
+        191
+      ],
+      [
+        1669,
+        280
+      ],
+      [
+        1586,
+        311
+      ],
+      [
+        1681,
+        319
+      ],
+      [
+        1321,
+        313
+      ],
+      [
+        1314,
+        269
+      ],
+      [
+        1280,
+        311
+      ],
+      [
+        1360,
+        377
+      ],
+      [
+        1311,
+        432
+      ],
+      [
+        468,
+        432
+      ],
+      [
+        417,
+        460
+      ],
+      [
+        399,
+        432
+      ],
+      [
+        136,
+        432
+      ],
+      [
+        138,
+        713
+      ],
+      [
+        518,
+        719
+      ],
+      [
+        2360,
+        543
+      ],
+      [
+        2360,
+        433
+      ],
+      [
+        2292,
+        430
+      ],
+      [
+        2292,
+        306
+      ],
+      [
+        2360,
+        311
+      ]
+    ],
+    "human_decision": "",
+    "comment": ""
+  },
+  "socle": {
+    "bbox": [
+      135,
+      544,
+      2226,
+      356
+    ],
+    "contour": [
+      [
+        2360,
+        544
+      ],
+      [
+        518,
+        720
+      ],
+      [
+        138,
+        714
+      ],
+      [
+        135,
+        893
+      ],
+      [
+        518,
+        899
+      ],
+      [
+        2354,
+        724
+      ]
+    ],
+    "contour_norm_clipped": [
+      [
+        0.999551,
+        0.676471
+      ],
+      [
+        0.172058,
+        1.0
+      ],
+      [
+        0.001348,
+        0.988971
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.172058,
+        1.0
+      ],
+      [
+        0.996855,
+        1.0
+      ]
+    ],
+    "raster_area_px": 35593,
+    "human_decision": "",
+    "comment": ""
+  }
+}

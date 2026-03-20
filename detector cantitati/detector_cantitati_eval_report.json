@@ -1,0 +1,206 @@
+{
+  "summary": {
+    "dataset_root": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati",
+    "raw_root": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw",
+    "gt_root": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt",
+    "num_images_total": 21,
+    "num_evaluated_total": 0,
+    "num_missing_gt_total": 21,
+    "num_errors_total": 0
+  },
+  "scenarios": [
+    {
+      "scenario_label": "2 imagini pe fundal alb 2 imagini pe fundal negru",
+      "num_images": 5,
+      "num_evaluated": 0,
+      "num_missing_gt": 5,
+      "facade_iou_mean_avg": 0.0,
+      "window_precision_avg": 0.0,
+      "window_recall_avg": 0.0,
+      "window_f1_avg": 0.0,
+      "area_mae_m2_avg": 0.0
+    },
+    {
+      "scenario_label": "Situatii complexe_raw",
+      "num_images": 4,
+      "num_evaluated": 0,
+      "num_missing_gt": 4,
+      "facade_iou_mean_avg": 0.0,
+      "window_precision_avg": 0.0,
+      "window_recall_avg": 0.0,
+      "window_f1_avg": 0.0,
+      "area_mae_m2_avg": 0.0
+    },
+    {
+      "scenario_label": "acoperisul se confunda cu fatada_raw",
+      "num_images": 9,
+      "num_evaluated": 0,
+      "num_missing_gt": 9,
+      "facade_iou_mean_avg": 0.0,
+      "window_precision_avg": 0.0,
+      "window_recall_avg": 0.0,
+      "window_f1_avg": 0.0,
+      "area_mae_m2_avg": 0.0
+    },
+    {
+      "scenario_label": "usa + fereastra alaturate_raw",
+      "num_images": 3,
+      "num_evaluated": 0,
+      "num_missing_gt": 3,
+      "facade_iou_mean_avg": 0.0,
+      "window_precision_avg": 0.0,
+      "window_recall_avg": 0.0,
+      "window_f1_avg": 0.0,
+      "area_mae_m2_avg": 0.0
+    }
+  ],
+  "samples": [
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_dreapta.png",
+      "scenario": "2 imagini pe fundal alb 2 imagini pe fundal negru",
+      "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_marginean_ana_colorized_fatada_dreapta",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_dreapta.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_fata.png",
+      "scenario": "2 imagini pe fundal alb 2 imagini pe fundal negru",
+      "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_marginean_ana_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_stanga.png",
+      "scenario": "2 imagini pe fundal alb 2 imagini pe fundal negru",
+      "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_marginean_ana_colorized_fatada_stanga",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MARGINEAN ANA_colorized_fatada_stanga.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MUNTEAN LUCRETIA_colorized_fatada_stanga.png",
+      "scenario": "2 imagini pe fundal alb 2 imagini pe fundal negru",
+      "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_muntean_lucretia_colorized_fatada_stanga",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\2 imagini pe fundal alb 2 imagini pe fundal negru\\MUNTEAN LUCRETIA_colorized_fatada_stanga.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\2 imagini pe fundal alb 2 imagini pe fundal negru\\POPA MARINELA_colorized_fatada_stanga.png",
+      "scenario": "2 imagini pe fundal alb 2 imagini pe fundal negru",
+      "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_popa_marinela_colorized_fatada_stanga",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\2 imagini pe fundal alb 2 imagini pe fundal negru\\POPA MARINELA_colorized_fatada_stanga.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\BACI CATALINA_colorized_fatada_spate.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_baci_catalina_colorized_fatada_spate",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\BACI CATALINA_colorized_fatada_spate.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\HATEGAN ELENA_colorized_fatada_fata.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_hategan_elena_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\HATEGAN ELENA_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\HATEGAN ELENA_colorized_fatada_spate.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_hategan_elena_colorized_fatada_spate",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\HATEGAN ELENA_colorized_fatada_spate.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\MUNTEAN LUCRETIA_colorized_fatada_fata.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_muntean_lucretia_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\MUNTEAN LUCRETIA_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\MUNTEAN LUCRETIA_colorized_fatada_spate.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_muntean_lucretia_colorized_fatada_spate",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\MUNTEAN LUCRETIA_colorized_fatada_spate.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\POPA MARINELA 2_COLORIZED_fatada_fata.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_popa_marinela_2_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\POPA MARINELA 2_COLORIZED_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\POPA MARINELA_colorized_fatada_dreapta.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_popa_marinela_colorized_fatada_dreapta",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\POPA MARINELA_colorized_fatada_dreapta.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\STETCU CALINA_colorized_fatada_fata.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_stetcu_calina_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\STETCU CALINA_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\acoperisul se confunda cu fatada_raw\\STREMTAN MARIA_colorized_fatada_fata.png",
+      "scenario": "acoperisul se confunda cu fatada_raw",
+      "sample_id": "acoperisul_se_confunda_cu_fatada_raw_stremtan_maria_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\acoperisul se confunda cu fatada_raw\\STREMTAN MARIA_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\Situatii complexe_raw\\POPA MARINELA 2_COLORIZED_fatada_fata.png",
+      "scenario": "Situatii complexe_raw",
+      "sample_id": "situatii_complexe_raw_popa_marinela_2_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\Situatii complexe_raw\\POPA MARINELA 2_COLORIZED_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\Situatii complexe_raw\\POPA MARINELA_colorized_fatada_fata.png",
+      "scenario": "Situatii complexe_raw",
+      "sample_id": "situatii_complexe_raw_popa_marinela_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\Situatii complexe_raw\\POPA MARINELA_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\Situatii complexe_raw\\POPA MARINELA_colorized_fatada_spate.png",
+      "scenario": "Situatii complexe_raw",
+      "sample_id": "situatii_complexe_raw_popa_marinela_colorized_fatada_spate",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\Situatii complexe_raw\\POPA MARINELA_colorized_fatada_spate.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\Situatii complexe_raw\\STETCU CALINA_colorized_fatada_dreapta.png",
+      "scenario": "Situatii complexe_raw",
+      "sample_id": "situatii_complexe_raw_stetcu_calina_colorized_fatada_dreapta",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\Situatii complexe_raw\\STETCU CALINA_colorized_fatada_dreapta.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\usa + fereastra alaturate_raw\\ARION SIMION_colorized_fatada_fata.png",
+      "scenario": "usa + fereastra alaturate_raw",
+      "sample_id": "usa_fereastra_alaturate_raw_arion_simion_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\usa + fereastra alaturate_raw\\ARION SIMION_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\usa + fereastra alaturate_raw\\SOAITA FLORIN_colorized_fatada_fata.png",
+      "scenario": "usa + fereastra alaturate_raw",
+      "sample_id": "usa_fereastra_alaturate_raw_soaita_florin_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\usa + fereastra alaturate_raw\\SOAITA FLORIN_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    },
+    {
+      "image": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\raw\\usa + fereastra alaturate_raw\\STREMTAN MARIA_colorized_fatada_fata.png",
+      "scenario": "usa + fereastra alaturate_raw",
+      "sample_id": "usa_fereastra_alaturate_raw_stremtan_maria_colorized_fatada_fata",
+      "gt": "H:\\11. DETECTIEPDF_CANTITATI\\detector cantitati\\gt\\usa + fereastra alaturate_raw\\STREMTAN MARIA_colorized_fatada_fata.json",
+      "status": "missing_gt_template_created"
+    }
+  ]
+}

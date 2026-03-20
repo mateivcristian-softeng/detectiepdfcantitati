@@ -1,0 +1,40 @@
+# Evaluator metrics - quality gate (AI5)
+# Run evaluator on fixtures. Non-blocking: failure only logs, does not block merge.
+name: Eval Gate
+
+on:
+  pull_request:
+    branches:
+      - integration
+      - main
+  push:
+    branches:
+      - integration
+      - main
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate fixtures
+        run: python tests/fixtures/make_fixtures.py
+
+      - name: Run evaluator batch
+        run: |
+          python -m tools.eval.run_eval --batch tests/fixtures -o json --out-file eval_output.json
+        continue-on-error: true
+
+      - name: Run eval regression tests
+        run: python -m unittest tests.test_eval_regression -v

@@ -1,0 +1,88 @@
+{
+  "sample_id": "situatii_complexe_raw_popa_marinela_colorized_fatada_spate",
+  "image_size": {
+    "width": 2312,
+    "height": 1159
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        76,
+        288,
+        1521,
+        364
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        870,
+        453,
+        153,
+        100
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [
+    {
+      "bbox": [
+        570,
+        459,
+        113,
+        183
+      ],
+      "type": "door"
+    },
+    {
+      "bbox": [
+        1228,
+        465,
+        91,
+        184
+      ],
+      "type": "door"
+    }
+  ],
+  "socles": [
+    {
+      "bbox": [
+        78,
+        634,
+        450,
+        59
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        747,
+        643,
+        84,
+        50
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        832,
+        643,
+        369,
+        55
+      ],
+      "type": "socle"
+    },
+    {
+      "bbox": [
+        1331,
+        643,
+        80,
+        48
+      ],
+      "type": "socle"
+    }
+  ]
+}

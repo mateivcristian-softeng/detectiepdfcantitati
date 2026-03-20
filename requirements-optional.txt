@@ -1,0 +1,14 @@
+# DrawQuantPDF - Optional dependencies for foundation segmentation
+# Install with: pip install -r requirements-optional.txt
+# These are NOT required for the default pipeline (OCR + color_detector).
+
+# Core ML stack (needed for any foundation model)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# YOLOv8 segmentation (lightweight, ~6-50 MB models)
+# Preferred for bbox+mask out-of-the-box
+ultralytics>=8.0.0
+
+# Segment Anything Model (heavy, ~2.5 GB) - uncomment if using SAM
+# segment-anything @ git+https://github.com/facebookresearch/segment-anything.git

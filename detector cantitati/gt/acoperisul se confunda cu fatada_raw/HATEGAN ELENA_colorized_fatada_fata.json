@@ -1,0 +1,22 @@
+{
+  "sample_id": "acoperisul_se_confunda_cu_fatada_raw_hategan_elena_colorized_fatada_fata",
+  "image_size": {
+    "width": 1205,
+    "height": 816
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [],
+  "windows": [],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        171,
+        586,
+        340,
+        45
+      ],
+      "type": "socle"
+    }
+  ]
+}

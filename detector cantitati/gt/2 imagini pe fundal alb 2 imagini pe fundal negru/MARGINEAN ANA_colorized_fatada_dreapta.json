@@ -1,0 +1,32 @@
+{
+  "sample_id": "2_imagini_pe_fundal_alb_2_imagini_pe_fundal_negru_marginean_ana_colorized_fatada_dreapta",
+  "image_size": {
+    "width": 1355,
+    "height": 1154
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        81,
+        51,
+        519,
+        559
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [],
+  "doors": [],
+  "socles": [
+    {
+      "bbox": [
+        94,
+        609,
+        497,
+        44
+      ],
+      "type": "socle"
+    }
+  ]
+}

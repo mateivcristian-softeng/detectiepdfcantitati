@@ -1,0 +1,115 @@
+{
+  "sample_id": "usa_fereastra_alaturate_raw_soaita_florin_colorized_fatada_fata",
+  "image_size": {
+    "width": 2400,
+    "height": 1074
+  },
+  "source": "auto-populated from processed_eval_report.json",
+  "facades": [
+    {
+      "bbox": [
+        8,
+        38,
+        1432,
+        429
+      ],
+      "type": "facade"
+    }
+  ],
+  "windows": [
+    {
+      "bbox": [
+        885,
+        175,
+        182,
+        114
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        1110,
+        175,
+        185,
+        117
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        574,
+        178,
+        74,
+        108
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        767,
+        178,
+        84,
+        109
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        224,
+        200,
+        158,
+        92
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        923,
+        240,
+        24,
+        16
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        200,
+        413,
+        61,
+        37
+      ],
+      "type": "window"
+    },
+    {
+      "bbox": [
+        282,
+        425,
+        15,
+        17
+      ],
+      "type": "window"
+    }
+  ],
+  "doors": [
+    {
+      "bbox": [
+        646,
+        286,
+        123,
+        81
+      ],
+      "type": "door"
+    }
+  ],
+  "socles": [
+    {
+      "bbox": [
+        44,
+        371,
+        1323,
+        94
+      ],
+      "type": "socle"
+    }
+  ]
+}
